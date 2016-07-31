@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>MILK</title>
+ <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
+ <link href="https://cheshirecatalyst.github.io/"/>
+ <updated>2016-07-31T08:21:02-04:00</updated>
+ <id>https://cheshirecatalyst.github.io</id>
+ <author>
+   <name>Seth Price</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>New Blog</title>
+   <link href="https://cheshirecatalyst.github.io/2016/07/31/new-blog/"/>
+   <updated>2016-07-31T00:00:00-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/31/new-blog</id>
+   <content type="html">&lt;p&gt;
+Today I started on a brave new mutli-pronged adventure. Ok, well most of those
+prongs all revolve around &lt;a href=&quot;https://emacswiki.org/&quot;&gt;emacs&lt;/a&gt;. Which is a cool looking and fun program in general.
+So this adventure began when I decided to graduate from using it for editing
+commit messages, and try to use it exclusively. Thus this blog is born.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+It&#39;s a pretty hefty task getting all the things how you want them, learning all
+the &lt;a href=&quot;https://www.emacswiki.org/emacs/KeyChord&quot;&gt;chords&lt;/a&gt; sorting through similar yet frustratingly different problems and
+solutions. This struggle in and of itself, helps the learner on many levels.
+&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-lisp&quot; data-lang=&quot;lisp&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;
+Did this work? I hope it did. And it did. Which is nice since I&#39;ve never even touched
+&lt;a href=&quot;http://orgmode.org/&quot;&gt;org-mode&lt;/a&gt; before. In fact while writing that line I got sick of manually typing in
+square brackets and looked up the chord for &#39;org-insert-link&#39; &#39;C-c C-l&#39;, which
+took many keystrokes to hunt down, however over time the initial investment of
+a few extra keystrokes is certainly worth never having to type those square brackets
+again unless I just R E A L L Y wanted to. It seems I have digressed, I was excited
+because the &lt;a href=&quot;http://orgmode.org/manual/Easy-templates.html#Easy-templates&quot;&gt;easy templates&lt;/a&gt; feature I read about to make a code block and see if it
+was indeed exported as html worked. That is both the feature and the translation to
+a code block in the output.
+&lt;/p&gt;
+
+&lt;p&gt;
+I will cover this process more in depth in the future, but for now I am just stoked
+this is all working, and glad I put the initial effort into emacs to reach the
+critical mass point where it all (at least to me) seems to start coming together.
+&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
