@@ -8,7 +8,8 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
-title:            MILK
+google_analytics: UA—81686781-1
+title:            .milk
 tagline:          My Infinite Lack of Knowledge
 description:      "A blog demonstrating my infinite lack of knowledge."
 url:              https://cheshirecatalyst.github.io

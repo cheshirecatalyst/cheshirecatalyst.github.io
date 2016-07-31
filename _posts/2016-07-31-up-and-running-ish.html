@@ -1,0 +1,27 @@
+---
+title: "Up And Running-ish"
+date: 2016-07-31 03:00:00
+layout:
+tags: orgmode so analytics jekyll emacs
+series: "Explorations in the key of emacs"
+---
+<p>
+And now (hopefully) I have my google analytics up and running thanks to this
+<a href="http://stackoverflow.com/a/36797554">answer</a> which is further explained in <a href="https://desiredpersona.com/google-analytics-jekyll/">this</a> blog post by aforementioned answerer.
+Many thanks to him, and those working on <a href="https://jekyllrb.com/">jekyll</a>. I am really starting to appreciate
+the stack as it is extremely intuitive and well documented. While they aren't really
+in competition as they are for completely different domains, I consider jekyll to be
+another great victory in the non-rails ruby web tech area.
+</p>
+
+<p>
+Oh, I almost forgot many thanks to <a href="http://web-mode.org/">web-mode</a> which I just found, as i was getting
+tired of seeing all sorts of funky errors in my .html from the jekyll templating
+and such. This particular snippet after installation worked wonders:
+</p>
+{% highlight cl %}
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+{% endhighlight %}
+<p>
+Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a> of supported languages in <a href="http://orgmode.org/manual/Literal-examples.html">literal</a> blocks with org-mode.
+</p>

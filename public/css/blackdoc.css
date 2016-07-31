@@ -301,16 +301,21 @@ a.sidebar-nav-item:focus {
     }
 }
 
-
-
-/*
- * Themes
- *
- * BlackDoc includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-
 /* Base16 (http://chriskempson.github.io/base16/#default) */
+
+/* fucking broswers, fucking css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.post_list {
+    list-style-type: none;
+}
+
+.post_list .ul {
+    margin-left: -40px;
+}
 
 .tag_list {
     display: inline-block;
