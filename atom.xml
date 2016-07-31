@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>MILK</title>
+ <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-07-31T16:54:33-04:00</updated>
+ <updated>2016-07-31T18:20:55-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
