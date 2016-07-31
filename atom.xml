@@ -4,7 +4,7 @@
  <title>MILK</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-07-31T08:41:49-04:00</updated>
+ <updated>2016-07-31T15:49:22-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
@@ -18,7 +18,7 @@
    <updated>2016-07-31T00:00:00-04:00</updated>
    <id>https://cheshirecatalyst.github.io/2016/07/31/new-blog</id>
    <content type="html">&lt;p&gt;
-Today I started on a brave new mutli-pronged adventure. Ok, well most of those
+Today I started on a new mutli-pronged adventure. Ok, well most of those
 prongs all revolve around &lt;a href=&quot;https://emacswiki.org/&quot;&gt;emacs&lt;/a&gt;. Which is a cool looking and fun program in general.
 So this adventure began when I decided to graduate from using it for editing
 commit messages, and try to use it exclusively. Thus this blog is born.
