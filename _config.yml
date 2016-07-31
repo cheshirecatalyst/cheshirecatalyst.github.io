@@ -8,15 +8,15 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
-title:            BlackDoc
-tagline:          Black Theme for Jekyll
-description:      "A two-column black theme with a scrolling sidebar. Ideal for sites requiring a master-detail layout, e.g. documentation, cheatsheets, lyrics, notes..."
-url:              https://github.com/karloespiritu/blackdoc
+title:            MILK
+tagline:          My Infinite Lack of Knowledge
+description:      "A blog demonstrating my infinite lack of knowledge."
+url:              https://cheshirecatalyst.github.io
 baseurl:          /
 
 author:
-  name:           'Karlo Espiritu'
-  url:            https://twitter.com/karloespiritu
+  name:           'Seth Price'
+  url:            https://github.com/cheshirecatalyst
 
 paginate:         5
 
@@ -24,4 +24,4 @@ paginate:         5
 version:          1.0.0
 
 github:
-  repo:           https://github.com/karloespiritu/blackdoc
+  repo:
