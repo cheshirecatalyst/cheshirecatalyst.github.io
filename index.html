@@ -27,6 +27,16 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA—81686781-1', 'auto');
+ ga('send', 'pageview');
+</script>
+
 </head>
 
 
@@ -45,9 +55,7 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item active" href="/">Home</a>
-
       
-
       
       
         
@@ -88,9 +96,15 @@
           
         
       
-
+        
+          
+        
+      
+        
+          
+        
+      
     </nav>
-
     <p>&copy; 2016. All rights reserved.</p>
   </div>
 </div>
@@ -101,12 +115,72 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="/2016/07/31/new-blog/">
+      <a href="/2016/07/30/up-and-running-ish/">
+        Up And Running-ish
+      </a>
+    </h1>
+
+    <span class="post-date">30 Jul 2016</span>
+
+    <p>
+And now (hopefully) I have my google analytics up and running thanks to this
+<a href="http://stackoverflow.com/a/36797554">answer</a> which is further explained in <a href="https://desiredpersona.com/google-analytics-jekyll/">this</a> blog post by aforementioned answerer.
+Many thanks to him, and those working on <a href="https://jekyllrb.com/">jekyll</a>. I am really starting to appreciate
+the stack as it is extremely intuitive and well documented. While they aren't really
+in competition as they are for completely different domains, I consider jekyll to be
+another great victory in the non-rails ruby web tech area.
+</p>
+
+<p>
+Oh, I almost forgot many thanks to <a href="http://web-mode.org/">web-mode</a> which I just found, as i was getting
+tired of seeing all sorts of funky errors in my .html from the jekyll templating
+and such. This particular snippet after installation worked wonders:
+</p>
+<figure class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;\\.html?\\&#39;&quot;</span> <span class="o">.</span> <span class="nv">web-mode</span><span class="p">))</span></code></pre></figure>
+<p>
+Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a> of supported languages in <a href="http://orgmode.org/manual/Literal-examples.html">literal</a> blocks with org-mode.
+</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/07/30/instant-fun/">
+        Instant Fun
+      </a>
+    </h1>
+
+    <span class="post-date">30 Jul 2016</span>
+
+    <p>
+So here is a useful <a href="http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200">tidbit</a> I came across while setting this whole thing up. I
+suppose it is somewhat old news to some, however I am new to the <a href="https://pages.github.com/">github pages</a>
+game and haven't looked at <a href="https://github.com/jekyll/jekyll">jekyll</a> since 2010-ish. That last bit is entirely my
+fault though, as I had left <a href="https://www.ruby-lang.org/en/">ruby-land</a> at that point and was off in <a href="https://nodejs.org/en/">v8-world</a>
+until recently. When I quit my job and moved back to the united states. Crazy
+I know.
+</p>
+
+<p>
+So after catching up on <a href="https://serialpodcast.org/">serial</a>, and getting back in to drawing, I finally got
+to the point where I could look at code again. It was here as previously
+mentioned that I got heavily into emacs. Which admittedly was less for the
+sake of blogging, and more because I had finally committed to get more than
+a passing familiarity with <a href="https://common-lisp.net/">cl</a>. Which meant spending time in emacs and <a href="https://github.com/slime/slime">slime</a>
+and the more time I spent in emacs the more I found out it can <a href="https://www.emacswiki.org/emacs/TheKitchenSink">do</a>. This, I am
+almost certain, is an age-old story of emacs addiction. I wonder if there is
+a 12 step program for this?</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="/2016/07/30/new-blog/">
         New Blog
       </a>
     </h1>
 
-    <span class="post-date">31 Jul 2016</span>
+    <span class="post-date">30 Jul 2016</span>
 
     <p>
 Today I started on a new mutli-pronged adventure. Ok, well most of those
@@ -140,37 +214,6 @@ a code block in the output.
 I will cover this process more in depth in the future, but for now I am just stoked
 this is all working, and glad I put the initial effort into emacs to reach the
 critical mass point where it all (at least to me) seems to start coming together.</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2016/07/31/instant-fun/">
-        Instant Fun
-      </a>
-    </h1>
-
-    <span class="post-date">31 Jul 2016</span>
-
-    <p>
-So here is a useful <a href="http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200">tidbit</a> I came across while setting this whole thing up. I
-suppose it is somewhat old news to some, however I am new to the <a href="https://pages.github.com/">github pages</a>
-game and haven't looked at <a href="https://github.com/jekyll/jekyll">jekyll</a> since 2010-ish. That last bit is entirely my
-fault though, as I had left <a href="https://www.ruby-lang.org/en/">ruby-land</a> at that point and was off in <a href="https://nodejs.org/en/">v8-world</a>
-until recently. When I quit my job and moved back to the united states. Crazy
-I know.
-</p>
-
-<p>
-So after catching up on <a href="https://serialpodcast.org/">serial</a>, and getting back in to drawing, I finally got
-to the point where I could look at code again. It was here as previously
-mentioned that I got heavily into emacs. Which admittedly was less for the
-sake of blogging, and more because I had finally committed to get more than
-a passing familiarity with <a href="https://common-lisp.net/">cl</a>. Which meant spending time in emacs and <a href="https://github.com/slime/slime">slime</a>
-and the more time I spent in emacs the more I found out it can <a href="https://www.emacswiki.org/emacs/TheKitchenSink">do</a>. This, I am
-almost certain, is an age-old story of emacs addiction. I wonder if there is
-a 12 step program for this?
-</p>
 
   </div>
   

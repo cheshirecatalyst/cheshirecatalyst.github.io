@@ -4,7 +4,7 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-07-31T18:20:55-04:00</updated>
+ <updated>2016-07-31T19:28:07-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
@@ -13,10 +13,62 @@
 
  
  <entry>
+   <title>Up And Running-ish</title>
+   <link href="https://cheshirecatalyst.github.io/2016/07/30/up-and-running-ish/"/>
+   <updated>2016-07-30T23:00:00-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/30/up-and-running-ish</id>
+   <content type="html">&lt;p&gt;
+And now (hopefully) I have my google analytics up and running thanks to this
+&lt;a href=&quot;http://stackoverflow.com/a/36797554&quot;&gt;answer&lt;/a&gt; which is further explained in &lt;a href=&quot;https://desiredpersona.com/google-analytics-jekyll/&quot;&gt;this&lt;/a&gt; blog post by aforementioned answerer.
+Many thanks to him, and those working on &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;. I am really starting to appreciate
+the stack as it is extremely intuitive and well documented. While they aren&#39;t really
+in competition as they are for completely different domains, I consider jekyll to be
+another great victory in the non-rails ruby web tech area.
+&lt;/p&gt;
+
+&lt;p&gt;
+Oh, I almost forgot many thanks to &lt;a href=&quot;http://web-mode.org/&quot;&gt;web-mode&lt;/a&gt; which I just found, as i was getting
+tired of seeing all sorts of funky errors in my .html from the jekyll templating
+and such. This particular snippet after installation worked wonders:
+&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;add-to-list&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;&amp;#39;auto-mode-alist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;\\.html?\\&amp;#39;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;web-mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;
+Also useful was this &lt;a href=&quot;http://orgmode.org/manual/Languages.html&quot;&gt;list&lt;/a&gt; of supported languages in &lt;a href=&quot;http://orgmode.org/manual/Literal-examples.html&quot;&gt;literal&lt;/a&gt; blocks with org-mode.
+&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Instant Fun</title>
+   <link href="https://cheshirecatalyst.github.io/2016/07/30/instant-fun/"/>
+   <updated>2016-07-30T22:00:00-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/30/instant-fun</id>
+   <content type="html">&lt;p&gt;
+So here is a useful &lt;a href=&quot;http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200&quot;&gt;tidbit&lt;/a&gt; I came across while setting this whole thing up. I
+suppose it is somewhat old news to some, however I am new to the &lt;a href=&quot;https://pages.github.com/&quot;&gt;github pages&lt;/a&gt;
+game and haven&#39;t looked at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;jekyll&lt;/a&gt; since 2010-ish. That last bit is entirely my
+fault though, as I had left &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby-land&lt;/a&gt; at that point and was off in &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;v8-world&lt;/a&gt;
+until recently. When I quit my job and moved back to the united states. Crazy
+I know.
+&lt;/p&gt;
+
+&lt;p&gt;
+So after catching up on &lt;a href=&quot;https://serialpodcast.org/&quot;&gt;serial&lt;/a&gt;, and getting back in to drawing, I finally got
+to the point where I could look at code again. It was here as previously
+mentioned that I got heavily into emacs. Which admittedly was less for the
+sake of blogging, and more because I had finally committed to get more than
+a passing familiarity with &lt;a href=&quot;https://common-lisp.net/&quot;&gt;cl&lt;/a&gt;. Which meant spending time in emacs and &lt;a href=&quot;https://github.com/slime/slime&quot;&gt;slime&lt;/a&gt;
+and the more time I spent in emacs the more I found out it can &lt;a href=&quot;https://www.emacswiki.org/emacs/TheKitchenSink&quot;&gt;do&lt;/a&gt;. This, I am
+almost certain, is an age-old story of emacs addiction. I wonder if there is
+a 12 step program for this?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>New Blog</title>
-   <link href="https://cheshirecatalyst.github.io/2016/07/31/new-blog/"/>
-   <updated>2016-07-31T00:00:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/07/31/new-blog</id>
+   <link href="https://cheshirecatalyst.github.io/2016/07/30/new-blog/"/>
+   <updated>2016-07-30T21:00:00-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/30/new-blog</id>
    <content type="html">&lt;p&gt;
 Today I started on a new mutli-pronged adventure. Ok, well most of those
 prongs all revolve around &lt;a href=&quot;https://emacswiki.org/&quot;&gt;emacs&lt;/a&gt;. Which is a cool looking and fun program in general.
@@ -49,33 +101,6 @@ a code block in the output.
 I will cover this process more in depth in the future, but for now I am just stoked
 this is all working, and glad I put the initial effort into emacs to reach the
 critical mass point where it all (at least to me) seems to start coming together.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Instant Fun</title>
-   <link href="https://cheshirecatalyst.github.io/2016/07/31/instant-fun/"/>
-   <updated>2016-07-31T00:00:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/07/31/instant-fun</id>
-   <content type="html">&lt;p&gt;
-So here is a useful &lt;a href=&quot;http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200&quot;&gt;tidbit&lt;/a&gt; I came across while setting this whole thing up. I
-suppose it is somewhat old news to some, however I am new to the &lt;a href=&quot;https://pages.github.com/&quot;&gt;github pages&lt;/a&gt;
-game and haven&#39;t looked at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;jekyll&lt;/a&gt; since 2010-ish. That last bit is entirely my
-fault though, as I had left &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby-land&lt;/a&gt; at that point and was off in &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;v8-world&lt;/a&gt;
-until recently. When I quit my job and moved back to the united states. Crazy
-I know.
-&lt;/p&gt;
-
-&lt;p&gt;
-So after catching up on &lt;a href=&quot;https://serialpodcast.org/&quot;&gt;serial&lt;/a&gt;, and getting back in to drawing, I finally got
-to the point where I could look at code again. It was here as previously
-mentioned that I got heavily into emacs. Which admittedly was less for the
-sake of blogging, and more because I had finally committed to get more than
-a passing familiarity with &lt;a href=&quot;https://common-lisp.net/&quot;&gt;cl&lt;/a&gt;. Which meant spending time in emacs and &lt;a href=&quot;https://github.com/slime/slime&quot;&gt;slime&lt;/a&gt;
-and the more time I spent in emacs the more I found out it can &lt;a href=&quot;https://www.emacswiki.org/emacs/TheKitchenSink&quot;&gt;do&lt;/a&gt;. This, I am
-almost certain, is an age-old story of emacs addiction. I wonder if there is
-a 12 step program for this?
-&lt;/p&gt;
 </content>
  </entry>
  
