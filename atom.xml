@@ -4,7 +4,7 @@
  <title>MILK</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-07-31T08:21:02-04:00</updated>
+ <updated>2016-07-31T08:41:49-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
@@ -48,8 +48,7 @@ a code block in the output.
 &lt;p&gt;
 I will cover this process more in depth in the future, but for now I am just stoked
 this is all working, and glad I put the initial effort into emacs to reach the
-critical mass point where it all (at least to me) seems to start coming together.
-&lt;/p&gt;
+critical mass point where it all (at least to me) seems to start coming together.&lt;/p&gt;
 </content>
  </entry>
  
