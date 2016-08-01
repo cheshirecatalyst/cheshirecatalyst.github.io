@@ -4,13 +4,61 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-07-31T22:59:59-04:00</updated>
+ <updated>2016-08-01T03:51:02-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>After the WTF</title>
+   <link href="https://cheshirecatalyst.github.io/2016/07/31/after-the-wtf/"/>
+   <updated>2016-07-31T23:32:59-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/31/after-the-wtf</id>
+   <content type="html">&lt;p&gt;
+Time for a little more meat and potatoes with this milk. What really inspired me
+to start this blog was a &lt;a href=&quot;http://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html&quot;&gt;post&lt;/a&gt; I came across. I must admit the idea of keeping my
+blog in a single file sounded extremely sexy, so armed with this article I googled
+my way to this point. All without ever having used org-mode at all or realizing
+org-mode is like some sort of strange markdown it seems like. And now I am hooked.
+&lt;/p&gt;
+
+&lt;p&gt;
+So the wtf:
+&lt;/p&gt;
+
+&lt;p&gt;
+Apparently I had messed up some property or a tag in combination with something
+funky in jekyll. Which somehow was getting blog posts for today rendered tomorrow.
+No idea, I opened a talk thing over with the jekyll folks, ran through a bunch of
+rm -rf, changed stuff, ended up removing all the properties added by the
+endless/export-to-blog to my sub headings and running the command again, and some
+how through all of that ::prezto:: it was working.
+&lt;/p&gt;
+
+&lt;p&gt;
+I think it really started when I noticed that my eagerness to write stuff and post
+had resulted in multiple posts for today and they were out of order so I hit up the
+google magic and located an old github &lt;a href=&quot;https://github.com/jekyll/jekyll/issues/30&quot;&gt;issue&lt;/a&gt; and it seemed to be fixed. So that was
+nice however I realized the problem was with the script I had found on previously
+mentioned blog SO&amp;#x2026; I did a quick hack and somewhere after that it broke, then
+it fixed itself. I think it had to do with updating posts that had already been
+marked by the script with a file name or something I dunno. Long story short&amp;#x2026;
+&quot;Too late!&quot; I undid my hack and polished it up a bit and submitted a pull request
+for great justice.
+&lt;/p&gt;
+
+&lt;p&gt;
+In case my shit code is shit and not merge worthy here is my &lt;a href=&quot;https://github.com/cheshirecatalyst/ox-jekyll-subtree&quot;&gt;version&lt;/a&gt; and the
+&lt;a href=&quot;https://github.com/Malabarba/ox-jekyll-subtree&quot;&gt;original&lt;/a&gt; by author of previously mentioned blog. I would check the original
+first to see if merged or perhaps he wrote it in a better way. Though I assume
+very few people are posting multiple times a day from org-mode using his handy
+helper, but I&#39;m continuously wrong, so we shall see.
+&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Up And Running-ish</title>
