@@ -4,7 +4,7 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-08-01T03:59:29-04:00</updated>
+ <updated>2016-08-01T04:27:46-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>After the WTF</title>
-   <link href="https://cheshirecatalyst.github.io/2016/07/31/after-the-wtf/"/>
-   <updated>2016-07-31T23:32:59-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/07/31/after-the-wtf</id>
+   <link href="https://cheshirecatalyst.github.io/2016/08/01/after-the-wtf/"/>
+   <updated>2016-08-01T02:01:01-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/08/01/after-the-wtf</id>
    <content type="html">&lt;p&gt;
 Time for a little more meat and potatoes with this milk. What really inspired me
 to start this blog was a &lt;a href=&quot;http://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html&quot;&gt;post&lt;/a&gt; I came across. I must admit the idea of keeping my
@@ -115,11 +115,11 @@ a 12 step program for this?&lt;/p&gt;
  <entry>
    <title>New Blog</title>
    <link href="https://cheshirecatalyst.github.io/2016/07/31/new-blog/"/>
-   <updated>2016-07-31T18:54:00-04:00</updated>
+   <updated>2016-07-31T18:00:00-04:00</updated>
    <id>https://cheshirecatalyst.github.io/2016/07/31/new-blog</id>
    <content type="html">&lt;p&gt;
-Today I started on a new mutli-pronged adventure. Ok, well most of those
-prongs all revolve around &lt;a href=&quot;https://emacswiki.org/&quot;&gt;emacs&lt;/a&gt;. Which is a cool looking and fun program in general.
+Today I started on a new multi-pronged adventure. Ok, well most of those
+prongs all revolve around &lt;a href=&quot;https://emacswiki.org/&quot;&gt;Emacs&lt;/a&gt;. Which is a cool looking and fun program in general.
 So this adventure began when I decided to graduate from using it for editing
 commit messages, and try to use it exclusively. Thus this blog is born.
 &lt;/p&gt;
@@ -140,14 +140,14 @@ square brackets and looked up the chord for &#39;org-insert-link&#39; &#39;C-c C
 took many keystrokes to hunt down, however over time the initial investment of
 a few extra keystrokes is certainly worth never having to type those square brackets
 again unless I just R E A L L Y wanted to. It seems I have digressed, I was excited
-because the &lt;a href=&quot;http://orgmode.org/manual/Easy-templates.html#Easy-templates&quot;&gt;easy templates&lt;/a&gt; feature I read about to make a code block and see if it
+because the &lt;a href=&quot;http://orgmode.org/manual/Easy-templates.html#Easy-templates&quot;&gt;easy&lt;/a&gt; feature I read about to make a code block and see if it
 was indeed exported as html worked. That is both the feature and the translation to
 a code block in the output.
 &lt;/p&gt;
 
 &lt;p&gt;
 I will cover this process more in depth in the future, but for now I am just stoked
-this is all working, and glad I put the initial effort into emacs to reach the
+this is all working, and glad I put the initial effort into Emacs to reach the
 critical mass point where it all (at least to me) seems to start coming together.&lt;/p&gt;
 </content>
  </entry>
