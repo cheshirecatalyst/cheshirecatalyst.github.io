@@ -8,6 +8,7 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
+timezone: America/New_York
 google_analytics: UA—81686781-1
 title:            .milk
 tagline:          My Infinite Lack of Knowledge
