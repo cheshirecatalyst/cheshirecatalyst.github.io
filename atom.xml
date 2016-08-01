@@ -4,7 +4,7 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-07-31T19:46:37-04:00</updated>
+ <updated>2016-07-31T22:59:59-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Up And Running-ish</title>
-   <link href="https://cheshirecatalyst.github.io/2016/07/30/up-and-running-ish/"/>
-   <updated>2016-07-30T23:00:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/07/30/up-and-running-ish</id>
+   <link href="https://cheshirecatalyst.github.io/2016/07/31/up-and-running-ish/"/>
+   <updated>2016-07-31T18:56:20-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/31/up-and-running-ish</id>
    <content type="html">&lt;p&gt;
 And now (hopefully) I have my google analytics up and running thanks to this
 &lt;a href=&quot;http://stackoverflow.com/a/36797554&quot;&gt;answer&lt;/a&gt; which is further explained in &lt;a href=&quot;https://desiredpersona.com/google-analytics-jekyll/&quot;&gt;this&lt;/a&gt; blog post by aforementioned answerer.
@@ -40,9 +40,9 @@ Also useful was this &lt;a href=&quot;http://orgmode.org/manual/Languages.html&q
  
  <entry>
    <title>Instant Fun</title>
-   <link href="https://cheshirecatalyst.github.io/2016/07/30/instant-fun/"/>
-   <updated>2016-07-30T22:00:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/07/30/instant-fun</id>
+   <link href="https://cheshirecatalyst.github.io/2016/07/31/instant-fun/"/>
+   <updated>2016-07-31T18:55:52-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/31/instant-fun</id>
    <content type="html">&lt;p&gt;
 So here is a useful &lt;a href=&quot;http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200&quot;&gt;tidbit&lt;/a&gt; I came across while setting this whole thing up. I
 suppose it is somewhat old news to some, however I am new to the &lt;a href=&quot;https://pages.github.com/&quot;&gt;github pages&lt;/a&gt;
@@ -66,9 +66,9 @@ a 12 step program for this?&lt;/p&gt;
  
  <entry>
    <title>New Blog</title>
-   <link href="https://cheshirecatalyst.github.io/2016/07/30/new-blog/"/>
-   <updated>2016-07-30T21:00:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/07/30/new-blog</id>
+   <link href="https://cheshirecatalyst.github.io/2016/07/31/new-blog/"/>
+   <updated>2016-07-31T18:54:00-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/31/new-blog</id>
    <content type="html">&lt;p&gt;
 Today I started on a new mutli-pronged adventure. Ok, well most of those
 prongs all revolve around &lt;a href=&quot;https://emacswiki.org/&quot;&gt;emacs&lt;/a&gt;. Which is a cool looking and fun program in general.
