@@ -67,7 +67,7 @@ funky in jekyll. Which somehow was getting blog posts for today rendered tomorro
 No idea, I opened a talk thing over with the jekyll folks, ran through a bunch of
 rm -rf, changed stuff, ended up removing all the properties added by the
 endless/export-to-blog to my sub headings and running the command again, and some
-how through all of that ::prezto:: it was working.
+how through all of that ::<a href="https://github.com/sorin-ionescu/prezto">prezto</a>:: it was working.
 </p>
 <p>
 I think it really started when I noticed that my eagerness to write stuff and post
@@ -86,6 +86,18 @@ In case my shit code is shit and not merge worthy here is my <a href="https://gi
 first to see if merged or perhaps he wrote it in a better way. Though I assume
 very few people are posting multiple times a day from org-mode using his handy
 helper, but I'm continuously wrong, so we shall see.
+</p>
+<p>
+UPDATE: So I think I tracked down what was going on. Originally the script
+mentioned above was attempting to glean a date off of the scheduled time, and
+since I'm not sure how to make the script insert a scheduled date and time,
+I noticed there was a closed field added that had an actual time stamp.
+</p>
+<p>
+Armed with this, I modified it to check for the presence of that before the
+scheduled field and use that for the subsequent code. Though I'm certain
+there must be a way to just insert a real time-stamp into the scheduled field
+instead of just a date. Will research tomorrow.
 </p>
     <ul class="tag_list">
         <li class="inline tag_list">
