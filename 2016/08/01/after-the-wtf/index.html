@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="/public/css/poole.css">
   <link rel="stylesheet" href="/public/css/syntax.css">
   <link rel="stylesheet" href="/public/css/blackdoc.css">
+  <link rel="stylesheet" href="/public/css/gpgc_styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
   <!-- Icons -->
@@ -114,39 +115,72 @@ instead of just a date. Will research tomorrow.
         </li>
     </ul>
 </div>
-<!-- <div class="related"> -->
-<!--   <h2>Related Posts</h2> -->
-<!--   <ul class="related-posts"> -->
-<!--      -->
-<!--     <li> -->
-<!--       <h3> -->
-<!--         <a href="/2016/07/31/up-and-running-ish/"> -->
-<!--           Up And Running-ish -->
-<!--           <small>31 Jul 2016</small> -->
-<!--         </a> -->
-<!--       </h3> -->
-<!--     </li> -->
-<!--      -->
-<!--     <li> -->
-<!--       <h3> -->
-<!--         <a href="/2016/07/31/instant-fun/"> -->
-<!--           Instant Fun -->
-<!--           <small>31 Jul 2016</small> -->
-<!--         </a> -->
-<!--       </h3> -->
-<!--     </li> -->
-<!--      -->
-<!--     <li> -->
-<!--       <h3> -->
-<!--         <a href="/2016/07/31/new-blog/"> -->
-<!--           New Blog -->
-<!--           <small>31 Jul 2016</small> -->
-<!--         </a> -->
-<!--       </h3> -->
-<!--     </li> -->
-<!--      -->
-<!--   </ul> -->
-<!-- </div> -->
+<div class="related">
+    <div class="gpgc-new-section gpgc-comments-font gpgc-hidden" id="gpgc_all_comments">
+</div>
+<div class="gpgc-new-section gpgc-comments-font gpgc-hidden" id="gpgc_no_comments">
+  <p class="gpgc-centered-text">No comments</p>
+</div>
+<div class="gpgc-actions gpgc-hidden gpgc-color-theme" id="gpgc_actions">
+  <span class="gpgc-action gpgc-centered-text">
+    <button class="gpgc-large-secondary-button" id="show_comments_button" onclick="showAllComments(CommentsArray)"></button>
+  </span>
+</div>
+<div class="gpgc-comment gpgc-comments-font gpgc-color-theme" id="gpgc_new_comment">
+  <div class="gpgc-comment-header">
+    <a id="gpgc_reader_url" href="https://github.com/wireddown/ghpages-ghcomments"><img class="gpgc-avatar" id="gpgc_reader_avatar" src="https://raw.githubusercontent.com/wireddown/ghpages-ghcomments/gh-pages/public/apple-touch-icon-precomposed.png" height="42" /><span id="gpgc_reader_login">You</span></a>
+    <small>today</small>
+    <div class="gpgc-tabs">
+      <button class="gpgc-tab gpgc-text-button" id="write_button">Write</button>
+      <button class="gpgc-tab gpgc-text-button" id="preview_button">Preview</button>
+    </div>
+  </div>
+  <div class="gpgc-new-comment" id="write_div">
+    <div class="gpgc-new-comment-form">
+      <textarea class="gpgc-new-comment-form-textarea" id="new_comment_field" placeholder="Write a comment"></textarea>
+    </div>
+  </div>
+  <div class="gpgc-new-comment gpgc-comment-contents gpgc-hidden" id="preview_div">
+  </div>
+  <div class="gpgc-hidden gpgc-comment-help" id="help_message">
+  </div>
+  <div class="gpgc-new-comment-actions">
+    <button class="gpgc-normal-primary-button gpgc-text-button" id="login_button" onclick="loginToGitHub()"><strong>Login to GitHub</strong></button>
+    <button class="gpgc-normal-primary-button gpgc-text-button gpgc-hidden" id="submit_button" onclick="postComment()"><strong>Submit</strong></button>
+  </div>
+</div>
+<div class="gpgc-new-section gpgc-comments-font gpgc-hidden" id="gpgc_disabled">
+  <p class="gpgc-centered-text">Comments are closed</p>
+</div>
+<div class="gpgc-new-section gpgc-comments-font gpgc-help-error gpgc-hidden" id="gpgc_reader_error">
+</div>
+<div class="gpgc_last_div">
+</div>
+<script type="text/javascript" src="//public/js/gpgc_core.js"></script>
+<script>
+  window.addEventListener("error", onError);
+  function onError(error) {
+    var errorMessage = "<h3><strong>gpgc</strong> Error: Global Exception</h3>";
+    errorMessage += "<p><dl><dt>Error</dt><dd>" + error.message + "</dd><dt>URL</dt><dd>" + error.filename + "</dd><dt>Line</dt><dd>" + error.lineno + "</dd><dt>Column</dt><dd>" + error.colno + "</dd></dl></p>"
+    showGeneralHelp(errorMessage);
+  }
+</script>
+<script>
+  var gpgc = {
+    new_comments_disabled: new Boolean(false).valueOf() || new Boolean().valueOf(),
+    site_url: "https://cheshirecatalyst.github.io",
+    page_path: "_posts/2016-08-01-after-the-wtf.html",
+    issue_title: "After the WTF",
+    repo_id: "cheshirecatalyst/cheshirecatalyst.github.io",
+    use_show_action: false,
+    github_application_client_id: "__your_github_app_client_id__",
+    github_application_code_authenticator_url: "https://dotmilk-gate.herokuapp.com/",
+    github_application_login_redirect_url: "https://cheshirecatalyst.github.io/gpgc_redirect/index.html",
+    enable_diagnostics: false,
+  };
+  gpgc_main();
+</script>
+</div>
         </div>
     </body>
 </html>
