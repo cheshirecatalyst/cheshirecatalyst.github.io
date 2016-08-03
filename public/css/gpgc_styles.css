@@ -17,16 +17,16 @@
 .gpgc-color-theme .gpgc-tab,
 .gpgc-color-theme .gpgc-tab .selected,
 .gpgc-color-theme .gpgc-new-comment-form-textarea {
-  border: solid 1px #90a959;
+  border: solid 1px #989729;
 }
 
 .gpgc-color-theme .gpgc-large-secondary-button {
-  color: #90a959;
+  color: #989729;
 }
 
 .gpgc-color-theme .gpgc-normal-primary-button,
 .gpgc-color-theme .gpgc-tab {
-  background-color: #90a959;
+  background-color: #989729;
 }
 
 /*
@@ -120,8 +120,8 @@
 
 .gpgc-comment {
   margin-top: .8rem;
-  background-color: #eee;
-  border: solid 1px #eee;
+  background-color: #504945;
+  border: solid 1px #504945;
           border-radius: 0px 0px 24px 24px;
   -webkit-border-radius: 0px 0px 24px 24px;
 }
@@ -170,8 +170,8 @@
 }
 
 .gpgc-tab.selected {
-  background-color: #fff;
-  color: inherit;
+    background-color: #ECDBB5;
+    color: #282828;
   cursor: auto;
 }
 
@@ -215,4 +215,8 @@ button:disabled {
   margin: .4rem;
   border: solid 2px #ab4642;
   background-color: #ffeded;
+}
+
+.related img {
+    margin-right: .4rem;
 }
