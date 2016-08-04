@@ -4,7 +4,7 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-08-03T20:32:25-04:00</updated>
+ <updated>2016-08-03T20:39:51-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>TTIJD</title>
    <link href="https://cheshirecatalyst.github.io/2016/08/03/ttijd/"/>
-   <updated>2016-08-03T16:31:17-04:00</updated>
+   <updated>2016-08-03T16:31:00-04:00</updated>
    <id>https://cheshirecatalyst.github.io/2016/08/03/ttijd</id>
    <content type="html">&lt;p&gt;
 That thing I just did, has started to be extremely helpful as far as &lt;a href=&quot;http://orgmode.org/&quot;&gt;org-mode&lt;/a&gt;
@@ -39,7 +39,7 @@ I discovered easy link creation while making &lt;a href=&quot;/2016/07/31/new-bl
 
 
 &lt;div class=&quot;figure&quot;&gt;
-&lt;p&gt;&lt;img src=&quot;public/images/lpyramid.jpg&quot; alt=&quot;lpyramid.jpg&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/public/images/lpyramid.jpg&quot; alt=&quot;lpyramid.jpg&quot; /&gt;
 &lt;/p&gt;
 &lt;/div&gt;
 
