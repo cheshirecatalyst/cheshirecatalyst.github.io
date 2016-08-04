@@ -5,6 +5,7 @@ _site
 .jekyll-metadata
 
 # Numerous always-ignore extensions
+*.org
 *.diff
 *.err
 *.orig

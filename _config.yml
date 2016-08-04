@@ -9,10 +9,11 @@ permalink:        pretty
 
 # Setup
 timezone: America/New_York
-google_analytics: UA—81686781-1
+excerpt_separator: <!--more-->
+google_analytics: UA-81686781-1
 title:            .milk
 tagline:          My Infinite Lack of Knowledge
-description:      "A blog demonstrating my infinite lack of knowledge."
+description:      Self-Documenting Self
 url:              https://cheshirecatalyst.github.io
 baseurl:          /
 

@@ -1,0 +1,11 @@
+repo_owner: cheshirecatalyst
+repo_name: cheshirecatalyst.github.io
+disabled: false
+use_show_action: false
+label_name: Post Comments
+label_color: 666666
+github_application:
+  client_id: de0d2929fc17e2b1e40e
+  code_authenticator: https://dotmilk-gate.herokuapp.com/authenticate/
+  callback_url: https://cheshirecatalyst.github.io/gpgc_redirect/index.html
+enable_diagnostics: false

@@ -327,6 +327,12 @@ a.sidebar-nav-item:focus {
 
 /* gruvbox */
 
+
+.content img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .theme-gruvbox {
     background-color: #282828;
 }
