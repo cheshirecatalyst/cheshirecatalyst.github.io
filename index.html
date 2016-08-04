@@ -52,6 +52,32 @@
             <div class="posts">
   <div class="post">
     <h1 class="post-title">
+      <a href="/2016/08/03/some-caveats-may-apply-pt-1/">
+        Some caveats may apply Pt. 1
+      </a>
+    </h1>
+    <span class="post-date">03 Aug 2016</span>
+    <p>
+So, turns out since I'm strange and just push my _live to master and the rest
+of it to the 'sources' branch, none of the hooks get called until I push sources
+which is fine I just hadn't thought about it and was like where are my comments.
+It is mostly my own fault for not thinking and also being difficult. I mean,
+had I really thought about it of course the git hook is looking through the
+_posts directory not 2016/xx/xx/xxxxxx. So with this issue resolved hopefully
+this push will do what I think it should and I wont have to call bootstrap and
+push with the script to make it work.
+</p>
+<p>
+Update: Wellllllll still no joy on the hooks. they have been +x and all that jazz
+so I have left a comment on an old <a href="https://github.com/wireddown/ghpages-ghcomments/issues/6">issue</a> hopefully something good will come from it
+luckily I can still manually create them with two commands when I publish a post.
+</p>
+<p>
+In the mean time I will dig through this script and see what gives.
+</p>
+  </div>
+  <div class="post">
+    <h1 class="post-title">
       <a href="/2016/08/03/ttijd/">
         TTIJD
       </a>
@@ -194,31 +220,6 @@ and such. This particular snippet after installation worked wonders:
 <p>
 Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a> of supported languages in <a href="http://orgmode.org/manual/Literal-examples.html">literal</a> blocks with org-mode.
 </p>
-  </div>
-  <div class="post">
-    <h1 class="post-title">
-      <a href="/2016/07/31/instant-fun/">
-        Instant Fun
-      </a>
-    </h1>
-    <span class="post-date">31 Jul 2016</span>
-    <p>
-So here is a useful <a href="http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200">tidbit</a> I came across while setting this whole thing up. I
-suppose it is somewhat old news to some, however I am new to the <a href="https://pages.github.com/">github pages</a>
-game and haven't looked at <a href="https://github.com/jekyll/jekyll">jekyll</a> since 2010-ish. That last bit is entirely my
-fault though, as I had left <a href="https://www.ruby-lang.org/en/">ruby-land</a> at that point and was off in <a href="https://nodejs.org/en/">v8-world</a>
-until recently. When I quit my job and moved back to the united states. Crazy
-I know.
-</p>
-<p>
-So after catching up on <a href="https://serialpodcast.org/">serial</a>, and getting back in to drawing, I finally got
-to the point where I could look at code again. It was here as previously
-mentioned that I got heavily into emacs. Which admittedly was less for the
-sake of blogging, and more because I had finally committed to get more than
-a passing familiarity with <a href="https://common-lisp.net/">cl</a>. Which meant spending time in emacs and <a href="https://github.com/slime/slime">slime</a>
-and the more time I spent in emacs the more I found out it can <a href="https://www.emacswiki.org/emacs/TheKitchenSink">do</a>. This, I am
-almost certain, is an age-old story of emacs addiction. I wonder if there is
-a 12 step program for this?</p>
   </div>
 </div>
 <div class="pagination">

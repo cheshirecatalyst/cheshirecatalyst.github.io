@@ -4,13 +4,41 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-08-03T20:39:51-04:00</updated>
+ <updated>2016-08-04T02:17:47-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Some caveats may apply Pt. 1</title>
+   <link href="https://cheshirecatalyst.github.io/2016/08/03/some-caveats-may-apply-pt-1/"/>
+   <updated>2016-08-03T19:01:00-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/08/03/some-caveats-may-apply-pt-1</id>
+   <content type="html">&lt;p&gt;
+So, turns out since I&#39;m strange and just push my _live to master and the rest
+of it to the &#39;sources&#39; branch, none of the hooks get called until I push sources
+which is fine I just hadn&#39;t thought about it and was like where are my comments.
+It is mostly my own fault for not thinking and also being difficult. I mean,
+had I really thought about it of course the git hook is looking through the
+_posts directory not 2016/xx/xx/xxxxxx. So with this issue resolved hopefully
+this push will do what I think it should and I wont have to call bootstrap and
+push with the script to make it work.
+&lt;/p&gt;
+
+&lt;p&gt;
+Update: Wellllllll still no joy on the hooks. they have been +x and all that jazz
+so I have left a comment on an old &lt;a href=&quot;https://github.com/wireddown/ghpages-ghcomments/issues/6&quot;&gt;issue&lt;/a&gt; hopefully something good will come from it
+luckily I can still manually create them with two commands when I publish a post.
+&lt;/p&gt;
+
+&lt;p&gt;
+In the mean time I will dig through this script and see what gives.
+&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>TTIJD</title>
