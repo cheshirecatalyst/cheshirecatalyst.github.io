@@ -8,4 +8,4 @@ github_application:
   client_id: de0d2929fc17e2b1e40e
   code_authenticator: https://dotmilk-gate.herokuapp.com/authenticate/
   callback_url: https://cheshirecatalyst.github.io/gpgc_redirect/index.html
-enable_diagnostics: true
+enable_diagnostics: false
