@@ -52,6 +52,62 @@
             <div class="posts">
   <div class="post">
     <h1 class="post-title">
+      <a href="/2016/08/01/after-the-wtf/">
+        After the WTF
+      </a>
+    </h1>
+    <span class="post-date">01 Aug 2016</span>
+    <p>
+Time for a little more meat and potatoes with this milk. What really inspired me
+to start this blog was a <a href="http://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html">post</a> I came across. I must admit the idea of keeping my
+blog in a single file sounded extremely sexy, so armed with this article I googled
+my way to this point. All without ever having used org-mode at all or realizing
+org-mode is like some sort of strange markdown it seems like. And now I am hooked.
+</p>
+<p>
+So the wtf:
+</p>
+<p>
+Apparently I had messed up some property or a tag in combination with something
+funky in jekyll. Which somehow was getting blog posts for today rendered tomorrow.
+No idea, I opened a talk thing over with the jekyll folks, ran through a bunch of
+rm -rf, changed stuff, ended up removing all the properties added by the
+endless/export-to-blog to my sub headings and running the command again, and some
+how through all of that ::<a href="https://github.com/sorin-ionescu/prezto">prezto</a>:: it was working.
+</p>
+<p>
+I think it really started when I noticed that my eagerness to write stuff and post
+had resulted in multiple posts for today and they were out of order so I hit up the
+google magic and located an old github <a href="https://github.com/jekyll/jekyll/issues/30">issue</a> and it seemed to be fixed. So that was
+nice however I realized the problem was with the script I had found on previously
+mentioned blog SO&#x2026; I did a quick hack and somewhere after that it broke, then
+it fixed itself. I think it had to do with updating posts that had already been
+marked by the script with a file name or something I dunno. Long story short&#x2026;
+"Too late!" I undid my hack and polished it up a bit and submitted a pull request
+for great justice.
+</p>
+<p>
+In case my shit code is shit and not merge worthy here is my <a href="https://github.com/cheshirecatalyst/ox-jekyll-subtree">version</a> and the
+<a href="https://github.com/Malabarba/ox-jekyll-subtree">original</a> by author of previously mentioned blog. I would check the original
+first to see if merged or perhaps he wrote it in a better way. Though I assume
+very few people are posting multiple times a day from org-mode using his handy
+helper, but I'm continuously wrong, so we shall see.
+</p>
+<p>
+UPDATE: So I think I tracked down what was going on. Originally the script
+mentioned above was attempting to glean a date off of the scheduled time, and
+since I'm not sure how to make the script insert a scheduled date and time,
+I noticed there was a closed field added that had an actual time stamp.
+</p>
+<p>
+Armed with this, I modified it to check for the presence of that before the
+scheduled field and use that for the subsequent code. Though I'm certain
+there must be a way to just insert a real time-stamp into the scheduled field
+instead of just a date. Will research tomorrow.
+</p>
+  </div>
+  <div class="post">
+    <h1 class="post-title">
       <a href="/2016/07/31/up-and-running-ish/">
         Up And Running-ish
       </a>

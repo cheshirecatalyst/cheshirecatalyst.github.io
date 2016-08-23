@@ -4,13 +4,51 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-08-04T22:53:27-04:00</updated>
+ <updated>2016-08-23T17:50:46-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Prelude To A Rabbit Hole</title>
+   <link href="https://cheshirecatalyst.github.io/2016/08/23/prelude-to-a-rabbit-hole/"/>
+   <updated>2016-08-23T13:44:05-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/08/23/prelude-to-a-rabbit-hole</id>
+   <content type="html">&lt;p&gt;
+So I have spent the last two weeks or so ripping parts out of &lt;a href=&quot;https://github.com/bbatsov/prelude&quot;&gt;Prelude&lt;/a&gt; and learning about
+minor mode creation and pretty much all the things I never never got around to checking
+out. I think perhaps most of it was fear, and a little bit of lazy / lack of need /
+want. A large part of this was due to &lt;a href=&quot;https://github.com/bbatsov/prelude&quot;&gt;Prelude&lt;/a&gt; and how it just worked, and still works. It
+just had fulfilled its purpose in being an introduction to the way things could be in
+Emacs.
+&lt;/p&gt;
+
+&lt;p&gt;
+Basically I had gotten tired of throwing stuff in my personal directory and had a growing
+file of thigns to work around features of prelude or adding funcitnality. One day it was too
+much and I set about figuring what parts of prelude did what and why. Much was learned about
+&lt;/p&gt;
+
+&lt;ul class=&quot;org-ul&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html&quot;&gt;hooks&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gnu.org/software/emacs/manual/html_node/elisp/Advising-Functions.html&quot;&gt;advising&lt;/a&gt; functions
+&lt;/li&gt;
+&lt;li&gt;basic &lt;a href=&quot;https://github.com/bbatsov/prelude/blob/master/core/prelude-mode.el&quot;&gt;minor&lt;/a&gt; mode creation
+&lt;/li&gt;
+&lt;li&gt;some &lt;a href=&quot;https://github.com/tonini/alchemist.el/blob/master/alchemist.el#L115&quot;&gt;keymap&lt;/a&gt; fun
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+I&#39;m sure there is much more, and that future posts will go into greater details.
+For now though. Phew&amp;#x2026;..
+&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Comments and Questions</title>
