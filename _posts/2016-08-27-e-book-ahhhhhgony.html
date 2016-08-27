@@ -1,0 +1,64 @@
+---
+title: "E-Book Ahhhhhgony"
+date: 2016-08-27 00:00:00
+layout: post
+tags: kindle journal
+series: "Literate Tech Journal"
+---
+<p>
+So a year or so ago, I purchased an e-book version of <a href="https://www.manning.com/books/elixir-in-action">Elixir in Action</a> after
+having run through most of <a href="http://learnyousomeerlang.com">Learn You Some Erlang</a> and discovering <a href="http://elixir-lang.org">Elixir</a> which
+I instantly fell in love with but had no immediate use for. Not wanting to
+leverage this awesome thing I just found solely (or at all really) as yet another
+web framework, I did not dive right in to <a href="http://www.phoenixframework.org">Phoenix</a> and still have yet to. So I
+needed something to sate my desire to ingrain Elixir into my brain. After 20 or
+so exercises on <a href="http://exercism.io/languages/elixir">exercism.io</a> I looked for some book action to learn the finer
+points of all things not Phoenix.
+</p>
+
+<p>
+Enter 'Elixir in action', great book. Loved it, soft intro and gets deeper quickly.
+However, on my kindle keyboard, the oft used images of code, instead of text
+elsewhere in the book, are way too faded and low contrast and fail to show up
+in a reasonable and readable manner. So I downloaded <a href="https://calibre-ebook.com">calibre</a> to see what damage
+I could do, as I know nothing about e-books at all. After a few failed conversions
+to what calibre considers an editable format, failed as in, I didn't like how the
+text looked after putting it back on the kindle. I went ahead and just opened the
+book editor, woo a simple image editor, normalize and sharpen looks good. Almost
+300 images and no bulk apply to all images feature I could find&#x2026; WELLLLLL
+</p>
+
+
+<p>
+Then I shifted to converting it to a zip <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a> to the rescue.
+</p>
+
+{% highlight bash %}
+mogrify -level 50x100% *.jpeg
+{% endhighlight %}
+
+<p>
+Converted it into an azw3. Place on kindle, massive text formatting problems. Ok Ok
+I think to myself must be a good way of going about this. Locate calibre plugin
+for KindleUnpack, discover it is a wrapper locate the appropriate repo <a href="https://github.com/kevinhendricks/KindleUnpack">here</a>. Unpack
+the original book, do that ImageMagick, have calibre build me an azw3. Sigh, much less
+in the horrible text department, but still I would consider unreadable, those images tho.
+Ok Ok time to dive into some more conversion options
+</p>
+
+<ul class="org-ul">
+<li>Disable font size rescaling
+</li>
+<li>Use Cybook G3 output and input profile as the resolution is right for my kindle
+</li>
+<li>Replace detect chapters at Xpath with /
+</li>
+<li>Replace insert page breaks before Xpath with /
+</li>
+</ul>
+
+<p>
+Hit blend&#x2026;.BAM a readable book text and images all looking pretty good. Mission
+success. Now I can finally get through chapter 5 after brushing back through chapter 4
+and finish a book I bought forever ago.
+</p>
