@@ -1,4 +1,5 @@
 # Dependencies
+array: []
 markdown:         redcarpet
 highlighter:      pygments
 gems:             [jekyll-paginate, jekyll-gist]

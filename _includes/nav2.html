@@ -1,0 +1,23 @@
+<nav><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> nav
+<span class="lineno">2</span>       '<span class="paren-2">(</span><a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+        {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+        {% endcomment %}
+        {% assign line_num = 2 %}
+        {% assign pages_list = site.pages %}
+        {% assign filtered_list = site.array %}
+        {% assign test_p = 'c|c|b|b|a|a' | split: '|' %}
+        {% for item in pages_list %}
+        {% if item.title != null %}
+        {% if item.layout == "page" %}
+        {% assign filtered_list = filtered_list | push: item %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% for node in filtered_list %}
+        {% assign line_num = line_num | plus: 1 %}
+        {% if forloop.last == true %}
+<span class="lineno">{{ line_num }}</span>         <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a><span class="paren-2">)</span><span class="paren-1">)</span>
+        {% else  %}
+<span class="lineno">{{ line_num }}</span>         <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>{% endif %}{% endfor %}</code></pre></nav>

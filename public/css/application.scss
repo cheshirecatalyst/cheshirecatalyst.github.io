@@ -1,0 +1,172 @@
+---
+---
+
+@import 'normalize';
+@import 'skeleton';
+
+$cinnabar: #E94B35;
+$madison: #2B3D50;
+$bluewood: #33485E;
+$ship-cove: #7C8AA5;
+$mako: #464A51;
+$alto: #DAD9D9;
+$summer-sky: #2BAFD9;
+$green: #1AAF5C;
+$brown: #BB634D;
+
+
+$avacado: #8A976C;
+$sage: #9AA878;
+
+$bokara: #282828;
+$le-brown: #504945;
+$grullo: #A89985;
+$raffia: #ECDBB5;
+$colonial-white: #E1D097;
+$citron: #989729;
+$fuel: #D69932;
+$orange: #D55D21;
+$red: #CA2726;
+$paradiso: #488588;
+
+
+/* html, body { */
+/*   height: 100%; */
+/*   overflow: auto; */
+/* } */
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: $bokara;
+  color: $ship-cove;
+}
+
+
+section.row {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+aside {
+  margin-bottom: 3.2rem;
+  a {
+    color: $madison;
+  }
+}
+
+.sidebar.col-xs-3, .content.col-xs-9 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: $citron;
+  color: $alto;
+  border-radius: 0 0 1rem 1rem;
+  padding-bottom: 1.6rem;
+  h1 {
+    margin-bottom: 0;
+    padding-left: 1.6rem;
+  }
+  p {
+    padding-left: 3.2rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+nav {
+
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+  margin-bottom: .6rem;
+  pre {
+    margin-bottom: 0;
+  }
+  code {
+    color: $raffia;
+    background-color: $bokara;
+    border: $sage;
+    border-radius: 1rem;
+    /* .lineno { */
+    /*   color: $raffia; */
+    /* } */
+    .paren-1 {
+      color: $red;
+    }
+    .paren-2 {
+      color: $fuel;
+    }
+    .kw {
+      color: $orange;
+    }
+  }
+  /* padding-left: 4.8rem; */
+  a {
+    color: $paradiso;
+    &hover {
+      color: $summer-sky;
+    }
+    /* display: block; */
+    /* line-height: 1.6; */
+    /* font-size: 110%; */
+  }
+}
+
+.posts {
+  margin-left: 4%;
+}
+
+/* .columns { */
+/*   background-color: $madison; */
+/* } */
+
+.post-style {
+  background-color: $le-brown;
+  color: $alto;
+  border-radius: 1rem 1rem 1rem 1rem;
+  &:first-of-type {
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .post-title a {
+    color: $fuel;
+    border-width: 0px 0px 0px 0px;
+    border-style: none none none none;
+  }
+  a {
+    color: $alto;
+    border-bottom: $citron;
+    border-width: 0px 0px 1px 0px;
+    border-style: none none dotted none;
+    &:hover {
+      color: $orange;
+    }
+  }
+
+
+}
+
+.post {
+  width: 90%;
+  margin: 0 auto 4rem;
+  padding: 1.5rem 0 0.5rem;
+  h4 {
+    display: inline-block;
+  }
+  code {
+    color: $mako;
+    background-color: $avacado;
+    border: $sage;
+  }
+}
