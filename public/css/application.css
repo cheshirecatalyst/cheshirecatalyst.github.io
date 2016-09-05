@@ -907,10 +907,6 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
-/* html, body { */
-/*   height: 100%; */
-/*   overflow: auto; */
-/* } */
 a {
   text-decoration: none; }
 
@@ -918,6 +914,10 @@ body {
   background-color: #464A51;
   color: #7C8AA5; }
 
+/* disable the fix for now until i update link on SO question to a static page with old css */
+/* code { */
+/*   -webkit-font-smoothing: subpixel-antialiased; */
+/* } */
 section.row {
   margin-left: auto;
   margin-right: auto;
@@ -968,9 +968,6 @@ nav {
 .posts {
   margin-left: 4%; }
 
-/* .columns { */
-/*   background-color: $madison; */
-/* } */
 main.content {
   text-align: center; }
 
@@ -1018,10 +1015,7 @@ nav code, .pagination code {
   color: #ECDBB5;
   background-color: #282828;
   border: #9AA878;
-  border-radius: 1rem;
-  /* .lineno { */
-  /*   color: $raffia; */
-  /* } */ }
+  border-radius: 1rem; }
   nav code .paren-1, .pagination code .paren-1 {
     color: #CA2726; }
   nav code .paren-2, .pagination code .paren-2 {
@@ -1035,8 +1029,6 @@ nav code, .pagination code {
   padding: 1.5rem 3.3rem 1.5rem;
   background-color: #488588;
   color: #DAD9D9;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   display: inline-block; }
   .pagination pre {
     margin: 0; }
