@@ -40,7 +40,7 @@ a {
 }
 
 body {
-  background-color: $bokara;
+  background-color: $mako;
   color: $ship-cove;
 }
 
@@ -57,6 +57,7 @@ section.row {
 
 aside {
   margin-bottom: 3.2rem;
+  min-width: 23rem;
   a {
     color: $madison;
   }
@@ -71,13 +72,19 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: $citron;
+  background-color: $paradiso;
   color: $alto;
   border-radius: 0 0 1rem 1rem;
   padding-bottom: 1.6rem;
+
   h1 {
     margin-bottom: 0;
     padding-left: 1.6rem;
+    a {
+      &:hover {
+        color: $fuel;
+      }
+    }
   }
   p {
     padding-left: 3.2rem;
@@ -93,6 +100,88 @@ nav {
   pre {
     margin-bottom: 0;
   }
+
+  a {
+    color: $citron;
+    &hover {
+      color: $summer-sky;
+    }
+  }
+}
+
+.posts {
+  margin-left: 4%;
+}
+
+/* .columns { */
+/*   background-color: $madison; */
+/* } */
+
+.post-style {
+
+
+
+
+
+}
+
+main.content {
+  text-align: center;
+}
+
+
+.post {
+  text-align: left;
+  background-color: $bokara;
+  color: $alto;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 0 auto 4rem 4%;
+  padding: 1.5rem 3.3rem 0.5rem;
+  display: inline-block;
+  .meta {
+    display: flex;
+    align-items: baseline;
+  }
+  &:first-of-type {
+    border-radius: 0 0 1rem 1rem;
+  }
+  .post-title a {
+    color: $paradiso;
+    border-width: 0px 0px 0px 0px;
+    border-style: none none none none;
+  }
+  h4 {
+    display: inline-block;
+  }
+  .post-date {
+    margin-left: auto;
+  }
+  a {
+    color: $alto;
+    border-bottom: $citron;
+    border-width: 0px 0px 1px 0px;
+    border-style: none none dotted none;
+    &:hover {
+      color: $orange;
+    }
+  }
+  .org-ul {
+    margin-left: 3.2rem;
+    list-style: square inside;
+  }
+  code {
+    color: $mako;
+    background-color: $alto;
+    border: $sage;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+nav, .pagination {
   code {
     color: $raffia;
     background-color: $bokara;
@@ -111,62 +200,29 @@ nav {
       color: $orange;
     }
   }
-  /* padding-left: 4.8rem; */
+}
+
+
+.pagination {
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 0 auto 4rem 4%;
+  padding: 1.5rem 3.3rem 1.5rem;
+
+  background-color: $paradiso;
+  color: $alto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  display: inline-block;
+  pre {
+    margin: 0;
+    code {
+      display: inline-block;
+    }
+  }
   a {
-    color: $paradiso;
+    color: $citron;
     &hover {
       color: $summer-sky;
     }
-    /* display: block; */
-    /* line-height: 1.6; */
-    /* font-size: 110%; */
-  }
-}
-
-.posts {
-  margin-left: 4%;
-}
-
-/* .columns { */
-/*   background-color: $madison; */
-/* } */
-
-.post-style {
-  background-color: $le-brown;
-  color: $alto;
-  border-radius: 1rem 1rem 1rem 1rem;
-  &:first-of-type {
-    border-radius: 0 0 1rem 1rem;
-  }
-
-  .post-title a {
-    color: $fuel;
-    border-width: 0px 0px 0px 0px;
-    border-style: none none none none;
-  }
-  a {
-    color: $alto;
-    border-bottom: $citron;
-    border-width: 0px 0px 1px 0px;
-    border-style: none none dotted none;
-    &:hover {
-      color: $orange;
-    }
-  }
-
-
-}
-
-.post {
-  width: 90%;
-  margin: 0 auto 4rem;
-  padding: 1.5rem 0 0.5rem;
-  h4 {
-    display: inline-block;
-  }
-  code {
-    color: $mako;
-    background-color: $avacado;
-    border: $sage;
   }
 }

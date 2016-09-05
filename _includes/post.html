@@ -1,0 +1,32 @@
+<article class="post">
+    <section class="meta">
+        <h4 class="post-title">
+            <a href="{{ site.baseurl }}{{ post.url | remove_first: '/'}}">
+                {% if include.post.title %}
+                {{ include.post.title }}
+                {% else %}
+                {{ page.title }}
+                {% endif %}
+            </a>
+        </h4>
+        <span class="post-date">
+            {% if include.post.date %}
+            {{ include.post.date | date_to_string }}
+            {% else %}
+            {{ page.date | date_to_string }}
+            {% endif %}
+        </span>
+    </section>
+    {% if include.post.content %}
+    {{ include.post.content | remove_first: '&lt;!&#x2013;more&#x2013;&gt;' }}
+    {% else %}
+    {{ content | remove_first: '&lt;!&#x2013;more&#x2013;&gt;' }}
+    {% endif %}
+    <ul class="tag_list">
+        {% for tag in page.tags %}
+        <li class="inline tag_list">
+            <a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</article>

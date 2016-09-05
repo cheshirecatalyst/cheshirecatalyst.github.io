@@ -1,0 +1,7 @@
+{% comment %}
+The code below makes a cute code block containing pagination
+{% endcomment %}
+{% capture pagination_code %}{% strip %}{% if paginator.next_page %}<a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>{% else %}<span class="pagination-item older">nil</span>{% endif %} . {% if paginator.previous_page %}{% if paginator.page == 2 %}<a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>{% else %}
+<a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>{% endif %}{% else %}<span class="pagination-item newer">nil</span>{% endif %}{% endstrip  %}{% endcapture %}
+
+<section class="pagination"><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> pagination '<span class="paren-2">(</span>{{ pagination_code }}<span class="paren-1">)</span></code></pre></section>

@@ -1,19 +1,5 @@
 ---
 layout: default
 ---
-<div class="post">
-    <h2 class="post-title">{{ page.title }}</h1>
-    <span class="post-date">{{ page.date | date_to_string }}</span>
-    {{ content | remove_first: '&lt;!&#x2013;more&#x2013;&gt;' }}
-    <ul class="tag_list">
-        {% for tag in page.tags %}
-        <li class="inline tag_list">
-            <a class="tag_list_link" href="/tag/{{ tag }}">{{ tag }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
 
-<!-- <div class="related">
-     {% include gpgc_comments.html post_title=page.title %}
-     </div> -->
+{% include post.html  %}
