@@ -11,17 +11,20 @@
       Up And Running-ish &middot; .milk
   </title>
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
+  <!-- <link rel="stylesheet" href="/public/css/poole.css"> -->
+  <link rel="stylesheet" href="/public/css/application.css?v=1.0">
+  <link rel="stylesheet" href="/public/css/flexboxgrid.css?v=1.0">
   <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/blackdoc.css">
+  <!-- <link rel="stylesheet" href="/public/css/blackdoc.css"> -->
   <link rel="stylesheet" href="/public/css/gpgc_styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond"> -->
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
   <link rel="shortcut icon" href="/public/favicon.ico">
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- <script type="text/javascript" src="/public/js/stickyfill.js"></script> -->
   <script>
  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -30,28 +33,46 @@
  ga('create', 'UA-81686781-1', 'auto');
  ga('send', 'pageview');
 </script>
+  <script type="text/javascript">
+   window.onload = function () {
+       //Sticky.autoInit()
+       //Stickyfill.add(stickyElements[0]);
+       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
+        *     console.log(stickyElements[i]);
+        *     Stickyfill.add(stickyElements[i]);
+        * }*/
+   }
+  </script>
 </head>
-    <body class="theme-gruvbox layout-reverse">
-        <div class="sidebar">
-    <div class="container sidebar-sticky">
-        <div class="sidebar-about">
-            <h1>
-                <a href="/">
-                    .milk
-                </a>
-            </h1>
-            <p class="lead">Self-Documenting Self</p>
-        </div>
-        <nav class="sidebar-nav">
-            <a class="sidebar-nav-item" href="/">Home</a>
-        </nav>
-        <p>&copy; 2016. All rights reserved.</p>
-    </div>
-</div>
-        <div class="content container">
-            <div class="post">
-    <h1 class="post-title">Up And Running-ish</h1>
-    <span class="post-date">31 Jul 2016</span>
+    <body>
+        <section class="row">
+            <aside class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <header class="sidebar-top-style">
+    <h1>
+        <a href="/">
+            .milk
+        </a>
+    </h1>
+    <p>Self-Documenting Self</p>
+<nav><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> nav
+<span class="lineno">2</span>       '<span class="paren-2">(</span><a class="sidebar-nav-item" href="/">Home</a>
+<span class="lineno">3</span>         <a class="sidebar-nav-item" href="/about/">About</a><span class="paren-2">)</span><span class="paren-1">)</span>
+</code></pre></nav>
+    <!-- <p>&copy; 2016. All rights reserved.</p> -->
+</header>
+            </aside>
+            <main class="content col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <article class="post">
+    <section class="meta">
+        <h4 class="post-title">
+            <a href="/">
+                Up And Running-ish
+            </a>
+        </h4>
+        <span class="post-date">
+            31 Jul 2016
+        </span>
+    </section>
     <p>
 And now (hopefully) I have my google analytics up and running thanks to this
 <a href="http://stackoverflow.com/a/36797554">answer</a> which is further explained in <a href="https://desiredpersona.com/google-analytics-jekyll/">this</a> blog post by aforementioned answerer.
@@ -86,74 +107,9 @@ Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a>
             <a class="tag_list_link" href="/tag/emacs">emacs</a>
         </li>
     </ul>
-</div>
-<!-- <div class="related">
-     <div class="gpgc-new-section gpgc-comments-font gpgc-hidden" id="gpgc_all_comments">
-</div>
-<div class="gpgc-new-section gpgc-comments-font gpgc-hidden" id="gpgc_no_comments">
-  <p class="gpgc-centered-text">No comments</p>
-</div>
-<div class="gpgc-actions gpgc-hidden gpgc-color-theme" id="gpgc_actions">
-  <span class="gpgc-action gpgc-centered-text">
-    <button class="gpgc-large-secondary-button" id="show_comments_button" onclick="showAllComments(CommentsArray)"></button>
-  </span>
-</div>
-<div class="gpgc-comment gpgc-comments-font gpgc-color-theme" id="gpgc_new_comment">
-  <div class="gpgc-comment-header">
-    <a id="gpgc_reader_url" href="https://github.com/wireddown/ghpages-ghcomments"><img class="gpgc-avatar" id="gpgc_reader_avatar" src="https://raw.githubusercontent.com/wireddown/ghpages-ghcomments/gh-pages/public/apple-touch-icon-precomposed.png" height="42" /><span id="gpgc_reader_login">You</span></a>
-    <small>today</small>
-    <div class="gpgc-tabs">
-      <button class="gpgc-tab gpgc-text-button" id="write_button">Write</button>
-      <button class="gpgc-tab gpgc-text-button" id="preview_button">Preview</button>
-    </div>
-  </div>
-  <div class="gpgc-new-comment" id="write_div">
-    <div class="gpgc-new-comment-form">
-      <textarea class="gpgc-new-comment-form-textarea" id="new_comment_field" placeholder="Write a comment"></textarea>
-    </div>
-  </div>
-  <div class="gpgc-new-comment gpgc-comment-contents gpgc-hidden" id="preview_div">
-  </div>
-  <div class="gpgc-hidden gpgc-comment-help" id="help_message">
-  </div>
-  <div class="gpgc-new-comment-actions">
-    <button class="gpgc-normal-primary-button gpgc-text-button" id="login_button" onclick="loginToGitHub()"><strong>Login to GitHub</strong></button>
-    <button class="gpgc-normal-primary-button gpgc-text-button gpgc-hidden" id="submit_button" onclick="postComment()"><strong>Submit</strong></button>
-  </div>
-</div>
-<div class="gpgc-new-section gpgc-comments-font gpgc-hidden" id="gpgc_disabled">
-  <p class="gpgc-centered-text">Comments are closed</p>
-</div>
-<div class="gpgc-new-section gpgc-comments-font gpgc-help-error gpgc-hidden" id="gpgc_reader_error">
-</div>
-<div class="gpgc_last_div">
-</div>
-<script type="text/javascript" src="https://cheshirecatalyst.github.io/public/js/gpgc_core.js"></script>
-<script>
-  window.addEventListener("error", onError);
-  function onError(error) {
-    var errorMessage = "<h3><strong>gpgc</strong> Error: Global Exception</h3>";
-    errorMessage += "<p><dl><dt>Error</dt><dd>" + error.message + "</dd><dt>URL</dt><dd>" + error.filename + "</dd><dt>Line</dt><dd>" + error.lineno + "</dd><dt>Column</dt><dd>" + error.colno + "</dd></dl></p>"
-    showGeneralHelp(errorMessage);
-  }
-</script>
-<script>
-  var gpgc = {
-    new_comments_disabled: new Boolean(false).valueOf() || new Boolean().valueOf(),
-    site_url: "https://cheshirecatalyst.github.io",
-    page_path: "_posts/2016-07-31-up-and-running-ish.html",
-    issue_title: "Up And Running-ish",
-    repo_id: "cheshirecatalyst/cheshirecatalyst.github.io",
-    use_show_action: false,
-    github_application_client_id: "de0d2929fc17e2b1e40e",
-    github_application_code_authenticator_url: "https://dotmilk-gate.herokuapp.com/authenticate/",
-    github_application_login_redirect_url: "https://cheshirecatalyst.github.io/gpgc_redirect/index.html",
-    enable_diagnostics: true,
-  };
-  gpgc_main();
-</script>
-     </div> -->
-        </div>
+</article>
+            </main>
+        </section>
     </body>
 </html>
 
