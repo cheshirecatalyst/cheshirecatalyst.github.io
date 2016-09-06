@@ -914,10 +914,11 @@ body {
   background-color: #464A51;
   color: #7C8AA5; }
 
-/* disable the fix for now until i update link on SO question to a static page with old css */
-/* code { */
-/*   -webkit-font-smoothing: subpixel-antialiased; */
-/* } */
+/* http://stackoverflow.com/questions/39337638/font-display-discrepancy-safari-9-1-3 */
+/* I actually want the other behavior which is the 'bolder' version of text in the code blocks */
+code {
+  -webkit-font-smoothing: subpixel-antialiased; }
+
 section.row {
   margin-left: auto;
   margin-right: auto;
