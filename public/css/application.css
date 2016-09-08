@@ -990,6 +990,7 @@ main.content {
     border-width: 0px 0px 0px 0px;
     border-style: none none none none; }
   .post h4 {
+    color: #488588;
     display: inline-block; }
   .post .post-date {
     margin-left: auto; }
