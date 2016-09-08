@@ -1037,5 +1037,46 @@ nav code, .pagination code {
       display: inline-block; }
   .pagination a {
     color: #989729; }
-    .pagination ahover {
+    .pagination a:hover {
       color: #2BAFD9; }
+
+.tag_list {
+  list-style: none;
+  display: inline-block; }
+  .tag_list a {
+    color: #D55D21;
+    border-style: none; }
+    .tag_list a:hover {
+      color: #2BAFD9; }
+  .tag_list li {
+    margin-left: 1rem; }
+    .tag_list li:first-of-type {
+      margin-left: 0; }
+
+.post_list {
+  list-style: none;
+  display: inline-block; }
+  .post_list a {
+    margin-right: 1rem;
+    color: #2BAFD9;
+    border-style: none; }
+    .post_list a:hover {
+      color: #D55D21; }
+  .post_list li {
+    margin: 0; }
+    .post_list li .date {
+      margin-left: 1rem; }
+  .post_list .post_tag_list {
+    list-style: none;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .post_list .post_tag_list a {
+      margin-right: 1rem;
+      color: #D55D21;
+      border-style: none; }
+      .post_list .post_tag_list a:hover {
+        color: #2BAFD9; }
+    .post_list .post_tag_list li {
+      display: inline-block; }

@@ -4,13 +4,102 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-09-06T05:06:26-04:00</updated>
+ <updated>2016-09-08T01:20:08-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Switching To Flexbox</title>
+   <link href="https://cheshirecatalyst.github.io/2016/09/06/switching-to-flexbox/"/>
+   <updated>2016-09-06T12:42:00-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/09/06/switching-to-flexbox</id>
+   <content type="html">&lt;p&gt;
+So when I got started with this blog, I grabbed the first thing that I saw I liked and was
+good to go, out of the box. That happened to be &lt;a href=&quot;https://github.com/karloespiritu/BlackDoc&quot;&gt;BlackDoc&lt;/a&gt;. I did this mainly so I could experiment with Emacs
+and blogging from it through &lt;a href=&quot;https://jekyllrb.com&quot;&gt;jekyll&lt;/a&gt;, also I generally despise any &#39;front-end&#39; work. Mostly due
+to caring about browsers, caring about finding the right polyfill, old versions of IE, Css hacks
+and generally what I consider to be a never ending barrage of bullshit that regular users are
+shielded from, but developers must be constantly aware of. This to me, makes forward facing tech
+on the web irritating, arbitrarily hard and not worth it. However, since this is just a thing I&#39;m
+doing for me and I don&#39;t care what browser where renders what in some way, I decided to give the
+whole html5 Css thing another go.
+&lt;/p&gt;
+
+&lt;p&gt;
+So I started with what I sort of remembered, I need to reset or something, and then I found that
+apparently lots of people are normalizing instead. Grabbed &lt;a href=&quot;https://github.com/JohnAlbin/normalize-scss&quot;&gt;this&lt;/a&gt; scss version of &lt;a href=&quot;https://github.com/necolas/normalize.css/&quot;&gt;Normalize.css&lt;/a&gt;. Now
+where do I find just some good stuff, you know what I mean, a sensible base layer. Poking around and
+a wild &lt;a href=&quot;http://getskeleton.com&quot;&gt;skeleton&lt;/a&gt; appeared, then I located &lt;a href=&quot;https://github.com/WhatsNewSaes/Skeleton-Sass&quot;&gt;this&lt;/a&gt; scss version which had the normalize removed, what luck
+since i had already found the standalone one.
+&lt;/p&gt;
+
+&lt;p&gt;
+At first I was messing around with the skeleton grid system, pretty sweet, but when I was exploring
+I kept hearing about &lt;a href=&quot;https://css-tricks.com/snippets/css/a-guide-to-flexbox/&quot;&gt;flexbox&lt;/a&gt; is coming soon, so I looked into this flexy box thing. Turns out it had
+arrived already. With this knowledge in hand I quickly located &lt;a href=&quot;http://flexboxgrid.com&quot;&gt;flexbox grid&lt;/a&gt; and disabled importing
+the grid system from skeleton. Nice nice, great start. Then I found out that chrome dropped support
+for position: sticky, messed around with java script polyfills for making this work. Then I decided
+meh who cares. With that tidbit out of the way, I moved on to colors. Even though I generally
+dislike frontend work I have always loved colors, which gave me another chance to use one of my favorite
+tools &lt;a href=&quot;http://sipapp.io&quot;&gt;sip&lt;/a&gt;, very cool. So I snagged me some colors, and got to work.
+&lt;/p&gt;
+
+&lt;p&gt;
+Type type type, messing around with template, soooo many divs and divs as wrappers barf. I thought
+this was &lt;a href=&quot;http://knowyourmeme.com/memes/come-on-it-s-2015-current-year&quot;&gt;&amp;gt;Current Year&lt;/a&gt; and there was supposed to be much semantic goodness. Much searching, find some
+examples. Strip down the html present in my starting template, omg all the shapes and typesetting are
+three kinds of messed up. Ok&amp;#x2026;Ok&amp;#x2026;Gonna bite the bullet lets strip this whole thing down, use
+reference render of decent looking one rendered old way. Ok some sections an aside a nav and various
+elements later, done. So I&#39;m looking at it and I&#39;m pretty unsatisfied with my navigation, and I think
+to myself yeah, code. It should look like code.
+&lt;/p&gt;
+
+&lt;p&gt;
+Great idea, I get to work on it manually plotting out some spans, simulate rainbow parenthesis. But there
+is this huge gap at the bottom of my code block. What gives? Turns out that the end of the liquid for
+tag before the closing &amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/nav&amp;gt; adds white space as it is interpreted literally. So I had
+to capture the output:
+&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;nav_links&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;line_num&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;pages_list&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;site.pages&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;filtered_list&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;site.array&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;item&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;in&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;pages_list&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;item&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;page&amp;quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;filtered_list&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;filtered_list&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;|&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;item&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;endif&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endfor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;node&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;in&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;filtered_list&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;assign&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;line_num&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;line_num&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;|&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;plus&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kr&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;forloop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;
+and insert it:
+&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;{{ nav_links | downcase }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;
+Instead of keeping the logic in between the tags, as it had originally been done in BlackDoc.
+&lt;/p&gt;
+
+&lt;p&gt;
+Alright, then I noticed that for some reason (still unknown to me) if you visit &lt;a href=&quot;https://dotmilk.github.io/bug&quot;&gt;this&lt;/a&gt; bugged archived
+copy of the main page. You will discover the thing that prompted me to ask &lt;a href=&quot;http://stackoverflow.com/q/39337638/2180406&quot;&gt;this&lt;/a&gt; question on SO. Basically
+for some reason on safari the left hand nav is thin and anti-aliased while the pagination at the bottom
+is not. I followed the advice, well sort of because I wanted both navigation places to look like the
+pagination. Now I just need to style the tags on the main article pages and should be done, unless
+I totally forgot about something. Probably did&amp;#x2026;probably did.
+&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>E-Book Ahhhhhgony</title>

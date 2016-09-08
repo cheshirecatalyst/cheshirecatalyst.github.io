@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>
+      Switching To Flexbox &middot; .milk
+  </title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/application.css?v=1.0">
+  <link rel="stylesheet" href="/public/css/flexboxgrid.css?v=1.0">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+  <link rel="stylesheet" href="/public/css/gpgc_styles.css">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond"> -->
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- <script type="text/javascript" src="/public/js/stickyfill.js"></script> -->
+  <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-81686781-1', 'auto');
+ ga('send', 'pageview');
+</script>
+  <script type="text/javascript">
+   window.onload = function () {
+       //Sticky.autoInit()
+       //Stickyfill.add(stickyElements[0]);
+       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
+        *     console.log(stickyElements[i]);
+        *     Stickyfill.add(stickyElements[i]);
+        * }*/
+   }
+  </script>
+</head>
+    <body>
+        <section class="row">
+            <aside class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <header class="sidebar-top-style">
+    <h1>
+        <a href="/">
+            .milk
+        </a>
+    </h1>
+    <p>Self-Documenting Self</p>
+<nav><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> nav
+<span class="lineno">2</span>       '<span class="paren-2">(</span><a class="sidebar-nav-item" href="/">home</a>
+<span class="lineno">3</span>         <a class="sidebar-nav-item" href="/about/">about</a><span class="paren-2">)</span><span class="paren-1">)</span>
+</code></pre></nav>
+    <!-- <p>&copy; 2016. All rights reserved.</p> -->
+</header>
+            </aside>
+            <main class="content col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <article class="post">
+    <section class="meta">
+        <h4 class="post-title">
+            <a href="/">
+                Switching To Flexbox
+            </a>
+        </h4>
+        <span class="post-date">
+            06 Sep 2016
+        </span>
+    </section>
+    <p>
+So when I got started with this blog, I grabbed the first thing that I saw I liked and was
+good to go, out of the box. That happened to be <a href="https://github.com/karloespiritu/BlackDoc">BlackDoc</a>. I did this mainly so I could experiment with Emacs
+and blogging from it through <a href="https://jekyllrb.com">jekyll</a>, also I generally despise any 'front-end' work. Mostly due
+to caring about browsers, caring about finding the right polyfill, old versions of IE, Css hacks
+and generally what I consider to be a never ending barrage of bullshit that regular users are
+shielded from, but developers must be constantly aware of. This to me, makes forward facing tech
+on the web irritating, arbitrarily hard and not worth it. However, since this is just a thing I'm
+doing for me and I don't care what browser where renders what in some way, I decided to give the
+whole html5 Css thing another go.
+</p>
+<p>
+So I started with what I sort of remembered, I need to reset or something, and then I found that
+apparently lots of people are normalizing instead. Grabbed <a href="https://github.com/JohnAlbin/normalize-scss">this</a> scss version of <a href="https://github.com/necolas/normalize.css/">Normalize.css</a>. Now
+where do I find just some good stuff, you know what I mean, a sensible base layer. Poking around and
+a wild <a href="http://getskeleton.com">skeleton</a> appeared, then I located <a href="https://github.com/WhatsNewSaes/Skeleton-Sass">this</a> scss version which had the normalize removed, what luck
+since i had already found the standalone one.
+</p>
+<p>
+At first I was messing around with the skeleton grid system, pretty sweet, but when I was exploring
+I kept hearing about <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox</a> is coming soon, so I looked into this flexy box thing. Turns out it had
+arrived already. With this knowledge in hand I quickly located <a href="http://flexboxgrid.com">flexbox grid</a> and disabled importing
+the grid system from skeleton. Nice nice, great start. Then I found out that chrome dropped support
+for position: sticky, messed around with java script polyfills for making this work. Then I decided
+meh who cares. With that tidbit out of the way, I moved on to colors. Even though I generally
+dislike frontend work I have always loved colors, which gave me another chance to use one of my favorite
+tools <a href="http://sipapp.io">sip</a>, very cool. So I snagged me some colors, and got to work.
+</p>
+<p>
+Type type type, messing around with template, soooo many divs and divs as wrappers barf. I thought
+this was <a href="http://knowyourmeme.com/memes/come-on-it-s-2015-current-year">&gt;Current Year</a> and there was supposed to be much semantic goodness. Much searching, find some
+examples. Strip down the html present in my starting template, omg all the shapes and typesetting are
+three kinds of messed up. Ok&#x2026;Ok&#x2026;Gonna bite the bullet lets strip this whole thing down, use
+reference render of decent looking one rendered old way. Ok some sections an aside a nav and various
+elements later, done. So I'm looking at it and I'm pretty unsatisfied with my navigation, and I think
+to myself yeah, code. It should look like code.
+</p>
+<p>
+Great idea, I get to work on it manually plotting out some spans, simulate rainbow parenthesis. But there
+is this huge gap at the bottom of my code block. What gives? Turns out that the end of the liquid for
+tag before the closing &lt;/code&gt;&lt;/pre&gt;&lt;/nav&gt; adds white space as it is interpreted literally. So I had
+to capture the output:
+</p>
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid"><span class="p">{%</span><span class="w"> </span><span class="nt">capture</span><span class="w"> </span><span class="nv">nav_links</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">line_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">pages_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>site.pages<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">filtered_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>site.array<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>item<span class="w"> </span>in<span class="w"> </span>pages_list<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">item</span><span class="p">.</span><span class="nv">title</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nv">null</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">item</span><span class="p">.</span><span class="nv">layout</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s2">&quot;page&quot;</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">filtered_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>filtered_list<span class="w"> </span>|<span class="w"> </span><span class="na">push</span><span class="o">:</span><span class="w"> </span>item<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">endif</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">endfor</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">for</span><span class="w"> </span>node<span class="w"> </span>in<span class="w"> </span>filtered_list<span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="nt">assign</span><span class="w"> </span><span class="na">line_num</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>line_num<span class="w"> </span>|<span class="w"> </span><span class="na">plus</span><span class="o">:</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">%}</span>
+<span class="p">{%</span><span class="w"> </span><span class="kr">if</span><span class="w"> </span><span class="nv">forloop</span><span class="p">.</span><span class="nv">last</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">%}</span></code></pre></figure>
+<p>
+and insert it:
+</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">{{ nav_links | downcase }}<span class="nt">&lt;/code&gt;&lt;/pre&gt;&lt;/nav&gt;</span></code></pre></figure>
+<p>
+Instead of keeping the logic in between the tags, as it had originally been done in BlackDoc.
+</p>
+<p>
+Alright, then I noticed that for some reason (still unknown to me) if you visit <a href="https://dotmilk.github.io/bug">this</a> bugged archived
+copy of the main page. You will discover the thing that prompted me to ask <a href="http://stackoverflow.com/q/39337638/2180406">this</a> question on SO. Basically
+for some reason on safari the left hand nav is thin and anti-aliased while the pagination at the bottom
+is not. I followed the advice, well sort of because I wanted both navigation places to look like the
+pagination. Now I just need to style the tags on the main article pages and should be done, unless
+I totally forgot about something. Probably did&#x2026;probably did.
+</p>
+    <ul class="tag_list">
+        <li class="inline tag_list">
+            <a class="tag_list_link" href="/tag/css">css</a>
+        </li>
+        <li class="inline tag_list">
+            <a class="tag_list_link" href="/tag/html5">html5</a>
+        </li>
+        <li class="inline tag_list">
+            <a class="tag_list_link" href="/tag/journal">journal</a>
+        </li>
+    </ul>
+</article>
+            </main>
+        </section>
+    </body>
+</html>
+

@@ -64,6 +64,21 @@
 <article class="post">
     <section class="meta">
         <h4 class="post-title">
+            <a href="/2016/08/03/ttijd/">
+                TTIJD
+            </a>
+        </h4>
+        <span class="post-date">
+            03 Aug 2016
+        </span>
+    </section>
+    <p>That thing I just did, has started to be extremely helpful as far as org-mode and my total Emacs experience. Well&#x2026;what is "That thing I just did"? Funny you should ask me that as I just discovered a thing 'C-c l' org-store-link as I was trying to just insert the Emacs link above and forgot to keep 'C' down for the 'C-c C-l'. Sure it was a diversion but I welcome temporary digressions to a certain depth while engaged in my day to day activities. It's basically like the problem with Wikipedia. Except for in Emacs, it's minutes of fascinated 'C-h k' which tells me wtf this key combo does or 'C-h v' which tells me wtf this variable is and how it relates to the largely unknown mesh of abstractions that let me type stuff like this. However I...</p>
+    <ul class="tag_list">
+    </ul>
+</article>
+<article class="post">
+    <section class="meta">
+        <h4 class="post-title">
             <a href="/2016/08/03/rfc/">
                 RFC
             </a>
@@ -74,8 +89,8 @@
     </section>
     <p>
 Ok Ok ok&#x2026;that is a horrible joke, however it is now apparently open season on
-comments thanks to a pretty cool <a href="https://github.com/wireddown/ghpages-ghcomments">hack</a>, all nicely packaged with wonderful and
-concise instructions <a href="http://downtothewire.io/ghpages-ghcomments/setup/">here</a>, and so far this seems to work. It very nicely added
+comments thanks to a pretty cool hack, all nicely packaged with wonderful and
+concise instructions here, and so far this seems to work. It very nicely added
 the appropriate stuff for existing posts and this post will mark the test of
 its hook functionality. Hoping it all works as advertised.
 </p>
@@ -93,54 +108,7 @@ its hook functionality. Hoping it all works as advertised.
             01 Aug 2016
         </span>
     </section>
-    <p>
-Time for a little more meat and potatoes with this milk. What really inspired me
-to start this blog was a <a href="http://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html">post</a> I came across. I must admit the idea of keeping my
-blog in a single file sounded extremely sexy, so armed with this article I googled
-my way to this point. All without ever having used org-mode at all or realizing
-org-mode is like some sort of strange markdown it seems like. And now I am hooked.
-</p>
-<p>
-So the wtf:
-</p>
-<p>
-Apparently I had messed up some property or a tag in combination with something
-funky in jekyll. Which somehow was getting blog posts for today rendered tomorrow.
-No idea, I opened a talk thing over with the jekyll folks, ran through a bunch of
-rm -rf, changed stuff, ended up removing all the properties added by the
-endless/export-to-blog to my sub headings and running the command again, and some
-how through all of that ::<a href="https://github.com/sorin-ionescu/prezto">prezto</a>:: it was working.
-</p>
-<p>
-I think it really started when I noticed that my eagerness to write stuff and post
-had resulted in multiple posts for today and they were out of order so I hit up the
-google magic and located an old github <a href="https://github.com/jekyll/jekyll/issues/30">issue</a> and it seemed to be fixed. So that was
-nice however I realized the problem was with the script I had found on previously
-mentioned blog SO&#x2026; I did a quick hack and somewhere after that it broke, then
-it fixed itself. I think it had to do with updating posts that had already been
-marked by the script with a file name or something I dunno. Long story short&#x2026;
-"Too late!" I undid my hack and polished it up a bit and submitted a pull request
-for great justice.
-</p>
-<p>
-In case my shit code is shit and not merge worthy here is my <a href="https://github.com/cheshirecatalyst/ox-jekyll-subtree">version</a> and the
-<a href="https://github.com/Malabarba/ox-jekyll-subtree">original</a> by author of previously mentioned blog. I would check the original
-first to see if merged or perhaps he wrote it in a better way. Though I assume
-very few people are posting multiple times a day from org-mode using his handy
-helper, but I'm continuously wrong, so we shall see.
-</p>
-<p>
-UPDATE: So I think I tracked down what was going on. Originally the script
-mentioned above was attempting to glean a date off of the scheduled time, and
-since I'm not sure how to make the script insert a scheduled date and time,
-I noticed there was a closed field added that had an actual time stamp.
-</p>
-<p>
-Armed with this, I modified it to check for the presence of that before the
-scheduled field and use that for the subsequent code. Though I'm certain
-there must be a way to just insert a real time-stamp into the scheduled field
-instead of just a date. Will research tomorrow.
-</p>
+    <p>Time for a little more meat and potatoes with this milk. What really inspired me to start this blog was a post I came across. I must admit the idea of keeping my blog in a single file sounded extremely sexy, so armed with this article I googled my way to this point. All without ever having used org-mode at all or realizing org-mode is like some sort of strange markdown it seems like. And now I am hooked. So the wtf: Apparently I had messed up some property or a tag in combination with something funky in jekyll. Which somehow was getting blog posts for today rendered tomorrow. No idea, I opened a talk thing over with the jekyll folks, ran through a bunch of rm -rf, changed stuff, ended up removing all the properties added by the endless/export-to-blog...</p>
     <ul class="tag_list">
     </ul>
 </article>
@@ -157,20 +125,16 @@ instead of just a date. Will research tomorrow.
     </section>
     <p>
 And now (hopefully) I have my google analytics up and running thanks to this
-<a href="http://stackoverflow.com/a/36797554">answer</a> which is further explained in <a href="https://desiredpersona.com/google-analytics-jekyll/">this</a> blog post by aforementioned answerer.
-Many thanks to him, and those working on <a href="https://jekyllrb.com/">jekyll</a>. I am really starting to appreciate
+answer which is further explained in this blog post by aforementioned answerer.
+Many thanks to him, and those working on jekyll. I am really starting to appreciate
 the stack as it is extremely intuitive and well documented. While they aren't really
 in competition as they are for completely different domains, I consider jekyll to be
 another great victory in the non-rails ruby web tech area.
-</p>
-<p>
-Oh, I almost forgot many thanks to <a href="http://web-mode.org/">web-mode</a> which I just found, as i was getting
+Oh, I almost forgot many thanks to web-mode which I just found, as i was getting
 tired of seeing all sorts of funky errors in my .html from the jekyll templating
 and such. This particular snippet after installation worked wonders:
-</p>
-<figure class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;\\.html?\\&#39;&quot;</span> <span class="o">.</span> <span class="nv">web-mode</span><span class="p">))</span></code></pre></figure>
-<p>
-Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a> of supported languages in <a href="http://orgmode.org/manual/Literal-examples.html">literal</a> blocks with org-mode.
+(add-to-list &#39;auto-mode-alist &#39;(&quot;\\.html?\\&#39;&quot; . web-mode))
+Also useful was this list of supported languages in literal blocks with org-mode.
 </p>
     <ul class="tag_list">
     </ul>
@@ -186,68 +150,11 @@ Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a>
             31 Jul 2016
         </span>
     </section>
-    <p>
-So here is a useful <a href="http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200">tidbit</a> I came across while setting this whole thing up. I
-suppose it is somewhat old news to some, however I am new to the <a href="https://pages.github.com/">github pages</a>
-game and haven't looked at <a href="https://github.com/jekyll/jekyll">jekyll</a> since 2010-ish. That last bit is entirely my
-fault though, as I had left <a href="https://www.ruby-lang.org/en/">ruby-land</a> at that point and was off in <a href="https://nodejs.org/en/">v8-world</a>
-until recently. When I quit my job and moved back to the united states. Crazy
-I know.
-</p>
-<p>
-So after catching up on <a href="https://serialpodcast.org/">serial</a>, and getting back in to drawing, I finally got
-to the point where I could look at code again. It was here as previously
-mentioned that I got heavily into emacs. Which admittedly was less for the
-sake of blogging, and more because I had finally committed to get more than
-a passing familiarity with <a href="https://common-lisp.net/">cl</a>. Which meant spending time in emacs and <a href="https://github.com/slime/slime">slime</a>
-and the more time I spent in emacs the more I found out it can <a href="https://www.emacswiki.org/emacs/TheKitchenSink">do</a>. This, I am
-almost certain, is an age-old story of emacs addiction. I wonder if there is
-a 12 step program for this?</p>
+    <p>So here is a useful tidbit I came across while setting this whole thing up. I suppose it is somewhat old news to some, however I am new to the github pages game and haven't looked at jekyll since 2010-ish. That last bit is entirely my fault though, as I had left ruby-land at that point and was off in v8-world until recently. When I quit my job and moved back to the united states. Crazy I know. So after catching up on serial, and getting back in to drawing, I finally got to the point where I could look at code again. It was here as previously mentioned that I got heavily into emacs. Which admittedly was less for the sake of blogging, and more because I had finally committed to get more than a passing familiarity with cl....</p>
     <ul class="tag_list">
     </ul>
 </article>
-<article class="post">
-    <section class="meta">
-        <h4 class="post-title">
-            <a href="/2016/07/31/new-blog/">
-                New Blog
-            </a>
-        </h4>
-        <span class="post-date">
-            31 Jul 2016
-        </span>
-    </section>
-    <p>
-Today I started on a new multi-pronged adventure. Ok, well most of those
-prongs all revolve around <a href="https://emacswiki.org/">Emacs</a>. Which is a cool looking and fun program in general.
-So this adventure began when I decided to graduate from using it for editing
-commit messages, and try to use it exclusively. Thus this blog is born.
-</p>
-<p>
-It's a pretty hefty task getting all the things how you want them, learning all
-the <a href="https://www.emacswiki.org/emacs/KeyChord">chords</a> sorting through similar yet frustratingly different problems and
-solutions. This struggle in and of itself, helps the learner on many levels.
-</p>
-<figure class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="mi">2</span><span class="p">)</span></code></pre></figure>
-<p>
-Did this work? I hope it did. And it did. Which is nice since I've never even touched
-<a href="http://orgmode.org/">org-mode</a> before. In fact while writing that line I got sick of manually typing in
-square brackets and looked up the chord for 'org-insert-link' 'C-c C-l', which
-took many keystrokes to hunt down, however over time the initial investment of
-a few extra keystrokes is certainly worth never having to type those square brackets
-again unless I just R E A L L Y wanted to. It seems I have digressed, I was excited
-because the <a href="http://orgmode.org/manual/Easy-templates.html#Easy-templates">easy</a> feature I read about to make a code block and see if it
-was indeed exported as html worked. That is both the feature and the translation to
-a code block in the output.
-</p>
-<p>
-I will cover this process more in depth in the future, but for now I am just stoked
-this is all working, and glad I put the initial effort into Emacs to reach the
-critical mass point where it all (at least to me) seems to start coming together.</p>
-    <ul class="tag_list">
-    </ul>
-</article>
-<section class="pagination"><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> pagination '<span class="paren-2">(</span><span class="pagination-item older">nil</span> . <a class="pagination-item newer" href="/">newer</a><span class="paren-2">)</span><span class="paren-1">)</span></code></pre></section>
+<section class="pagination"><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> pagination '<span class="paren-2">(</span><a class="pagination-item older" href="/page3">older</a> . <a class="pagination-item newer" href="/">newer</a><span class="paren-2">)</span><span class="paren-1">)</span></code></pre></section>
             </main>
         </section>
     </body>

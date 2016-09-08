@@ -64,6 +64,21 @@
 <article class="post">
     <section class="meta">
         <h4 class="post-title">
+            <a href="/2016/09/06/switching-to-flexbox/">
+                Switching To Flexbox
+            </a>
+        </h4>
+        <span class="post-date">
+            06 Sep 2016
+        </span>
+    </section>
+    <p>So when I got started with this blog, I grabbed the first thing that I saw I liked and was good to go, out of the box. That happened to be BlackDoc. I did this mainly so I could experiment with Emacs and blogging from it through jekyll, also I generally despise any 'front-end' work. Mostly due to caring about browsers, caring about finding the right polyfill, old versions of IE, Css hacks and generally what I consider to be a never ending barrage of bullshit that regular users are shielded from, but developers must be constantly aware of. This to me, makes forward facing tech on the web irritating, arbitrarily hard and not worth it. However, since this is just a thing I'm doing for me and I don't care what browser where renders what in some way, I...</p>
+    <ul class="tag_list">
+    </ul>
+</article>
+<article class="post">
+    <section class="meta">
+        <h4 class="post-title">
             <a href="/2016/08/27/e-book-ahhhhhgony/">
                 E-Book Ahhhhhgony
             </a>
@@ -72,54 +87,7 @@
             27 Aug 2016
         </span>
     </section>
-    <p>
-So a year or so ago, I purchased an e-book version of <a href="https://www.manning.com/books/elixir-in-action">Elixir in Action</a> after
-having run through most of <a href="http://learnyousomeerlang.com">Learn You Some Erlang</a> and discovering <a href="http://elixir-lang.org">Elixir</a> which
-I instantly fell in love with but had no immediate use for. Not wanting to
-leverage this awesome thing I just found solely (or at all really) as yet another
-web framework, I did not dive right in to <a href="http://www.phoenixframework.org">Phoenix</a> and still have yet to. So I
-needed something to sate my desire to ingrain Elixir into my brain. After 20 or
-so exercises on <a href="http://exercism.io/languages/elixir">exercism.io</a> I looked for some book action to learn the finer
-points of all things not Phoenix.
-</p>
-<p>
-Enter 'Elixir in action', great book. Loved it, soft intro and gets deeper quickly.
-However, on my kindle keyboard, the oft used images of code, instead of text
-elsewhere in the book, are way too faded and low contrast and fail to show up
-in a reasonable and readable manner. So I downloaded <a href="https://calibre-ebook.com">calibre</a> to see what damage
-I could do, as I know nothing about e-books at all. After a few failed conversions
-to what calibre considers an editable format, failed as in, I didn't like how the
-text looked after putting it back on the kindle. I went ahead and just opened the
-book editor, woo a simple image editor, normalize and sharpen looks good. Almost
-300 images and no bulk apply to all images feature I could find&#x2026; WELLLLLL
-</p>
-<p>
-Then I shifted to converting it to a zip <a href="http://www.imagemagick.org/script/index.php">ImageMagick</a> to the rescue.
-</p>
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">mogrify -level 50x100% *.jpeg</code></pre></figure>
-<p>
-Converted it into an azw3. Place on kindle, massive text formatting problems. Ok Ok
-I think to myself must be a good way of going about this. Locate calibre plugin
-for KindleUnpack, discover it is a wrapper locate the appropriate repo <a href="https://github.com/kevinhendricks/KindleUnpack">here</a>. Unpack
-the original book, do that ImageMagick, have calibre build me an azw3. Sigh, much less
-in the horrible text department, but still I would consider unreadable, those images tho.
-Ok Ok time to dive into some more conversion options
-</p>
-<ul class="org-ul">
-<li>Disable font size rescaling
-</li>
-<li>Use Cybook G3 output and input profile as the resolution is right for my kindle
-</li>
-<li>Replace detect chapters at Xpath with /
-</li>
-<li>Replace insert page breaks before Xpath with /
-</li>
-</ul>
-<p>
-Hit blend&#x2026;.BAM a readable book text and images all looking pretty good. Mission
-success. Now I can finally get through chapter 5 after brushing back through chapter 4
-and finish a book I bought forever ago.
-</p>
+    <p>So a year or so ago, I purchased an e-book version of Elixir in Action after having run through most of Learn You Some Erlang and discovering Elixir which I instantly fell in love with but had no immediate use for. Not wanting to leverage this awesome thing I just found solely (or at all really) as yet another web framework, I did not dive right in to Phoenix and still have yet to. So I needed something to sate my desire to ingrain Elixir into my brain. After 20 or so exercises on exercism.io I looked for some book action to learn the finer points of all things not Phoenix. Enter 'Elixir in action', great book. Loved it, soft intro and gets deeper quickly. However, on my kindle keyboard, the oft used images of code, instead of text elsewhere...</p>
     <ul class="tag_list">
     </ul>
 </article>
@@ -134,33 +102,7 @@ and finish a book I bought forever ago.
             23 Aug 2016
         </span>
     </section>
-    <p>
-So I have spent the last two weeks or so ripping parts out of <a href="https://github.com/bbatsov/prelude">Prelude</a> and learning about
-minor mode creation and pretty much all the things I never never got around to checking
-out. I think perhaps most of it was fear, and a little bit of lazy / lack of need /
-want. A large part of this was due to <a href="https://github.com/bbatsov/prelude">Prelude</a> and how it just worked, and still works. It
-just had fulfilled its purpose in being an introduction to the way things could be in
-Emacs.
-</p>
-<p>
-Basically I had gotten tired of throwing stuff in my personal directory and had a growing
-file of thigns to work around features of prelude or adding funcitnality. One day it was too
-much and I set about figuring what parts of prelude did what and why. Much was learned about
-</p>
-<ul class="org-ul">
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Hooks.html">hooks</a>
-</li>
-<li><a href="https://www.gnu.org/software/emacs/manual/html_node/elisp/Advising-Functions.html">advising</a> functions
-</li>
-<li>basic <a href="https://github.com/bbatsov/prelude/blob/master/core/prelude-mode.el">minor</a> mode creation
-</li>
-<li>some <a href="https://github.com/tonini/alchemist.el/blob/master/alchemist.el#L115">keymap</a> fun
-</li>
-</ul>
-<p>
-I'm sure there is much more, and that future posts will go into greater details.
-For now though. Phew&#x2026;..
-</p>
+    <p>So I have spent the last two weeks or so ripping parts out of Prelude and learning about minor mode creation and pretty much all the things I never never got around to checking out. I think perhaps most of it was fear, and a little bit of lazy / lack of need / want. A large part of this was due to Prelude and how it just worked, and still works. It just had fulfilled its purpose in being an introduction to the way things could be in Emacs. Basically I had gotten tired of throwing stuff in my personal directory and had a growing file of thigns to work around features of prelude or adding funcitnality. One day it was too much and I set about figuring what parts of prelude did what and why. Much was learned...</p>
     <ul class="tag_list">
     </ul>
 </article>
@@ -194,79 +136,7 @@ diagnostics it suddenly works. Yay&#x2026;ish.
             03 Aug 2016
         </span>
     </section>
-    <p>
-So, turns out since I'm strange and just push my _live to master and the rest
-of it to the 'sources' branch, none of the hooks get called until I push sources
-which is fine I just hadn't thought about it and was like where are my comments.
-It is mostly my own fault for not thinking and also being difficult. I mean,
-had I really thought about it of course the git hook is looking through the
-_posts directory not 2016/xx/xx/xxxxxx. So with this issue resolved hopefully
-this push will do what I think it should and I wont have to call bootstrap and
-push with the script to make it work.
-</p>
-<p>
-Update: Wellllllll still no joy on the hooks. they have been +x and all that jazz
-so I have left a comment on an old <a href="https://github.com/wireddown/ghpages-ghcomments/issues/6">issue</a> hopefully something good will come from it
-luckily I can still manually create them with two commands when I publish a post.
-</p>
-<p>
-In the mean time I will dig through this script and see what gives.
-</p>
-    <ul class="tag_list">
-    </ul>
-</article>
-<article class="post">
-    <section class="meta">
-        <h4 class="post-title">
-            <a href="/2016/08/03/ttijd/">
-                TTIJD
-            </a>
-        </h4>
-        <span class="post-date">
-            03 Aug 2016
-        </span>
-    </section>
-    <p>
-That thing I just did, has started to be extremely helpful as far as <a href="http://orgmode.org/">org-mode</a>
-and my total <a href="https://emacswiki.org/">Emacs</a> experience. Well&#x2026;what is "That thing I just did"? Funny
-you should ask me that as I just discovered a thing 'C-c l' <a href="http://orgmode.org/manual/Handling-links.html">org-store-link</a> as
-I was trying to just insert the Emacs link above and forgot to keep 'C' down
-for the 'C-c C-l'. Sure it was a diversion but I welcome temporary digressions
-to a certain depth while engaged in my day to day activities. It's basically
-like the <a href="https://xkcd.com/214/">problem</a> with Wikipedia. Except for in Emacs, it's minutes of fascinated
-'C-h k' which tells me wtf this key combo does or 'C-h v' which tells me wtf this
-variable is and how it relates to the largely unknown mesh of abstractions that
-let me type stuff like this.
-</p>
-<p>
-However I too have digressed, but not really. I just wrote about something I just
-found out about, a feature of this thing I am writing this blog in which will
-come in handy, and already had when I started using it and writing about the time
-I discovered easy link creation while making <a href="/2016/07/31/new-blog">this other</a> post&#x2026;
-</p>
-<div class="figure">
-<p><img src="/public/images/lpyramid.jpg" alt="lpyramid.jpg" />
-</p>
-</div>
-<p>
-While the above pyramid has seen more than its fair share of use and abuse, certainly
-a few of those items above will really help you and a different or overlapping set
-will help someone else. For instance I have really been digging on <a href="http://exercism.io/">exercism.io</a>
-for my contrived experiences, which completing the elixir (I had them all done,
-they have since added more) and common lisp problems in Emacs has given me direct
-purposeful experience with Emacs. Say you are all about <a href="https://atom.io/">Atom</a> and have your actual
-work, workflow all set up there, and you've heard about this Emacs thing. Well
-you can keep your purposeful experience in atom (do your work there) and play with
-contrived experiences in your preferred or new language in Emacs while getting
-purposeful experience with it.
-</p>
-<p>
-Now I add a new layer in by blogging about my experience from inside one of the
-technologies I have used to edit all parts of this blog. Which if I point out things
-tips tricks chords then this .org file I'm blogging from also becomes a sort of
-<a href="http://uncyclopedia.wikia.com/wiki/Worst_100_Self_Help_books_of_All_Time">self-help</a> <a href="http://www.core-vector.net/files/redcode_cheatsheet.pdf">cheat-sheet</a>. Which is to say getting this blog going in a single file
-has come with other unexpected benefits.
-</p>
+    <p>So, turns out since I'm strange and just push my _live to master and the rest of it to the 'sources' branch, none of the hooks get called until I push sources which is fine I just hadn't thought about it and was like where are my comments. It is mostly my own fault for not thinking and also being difficult. I mean, had I really thought about it of course the git hook is looking through the _posts directory not 2016/xx/xx/xxxxxx. So with this issue resolved hopefully this push will do what I think it should and I wont have to call bootstrap and push with the script to make it work. Update: Wellllllll still no joy on the hooks. they have been +x and all that jazz so I have left a comment on an old issue hopefully...</p>
     <ul class="tag_list">
     </ul>
 </article>
