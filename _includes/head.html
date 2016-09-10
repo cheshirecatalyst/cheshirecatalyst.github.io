@@ -15,11 +15,10 @@
   </title>
 
   <!-- CSS -->
-  <!-- <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css"> -->
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/application.css?v=1.0">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/flexboxgrid.css?v=1.0">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
-  <!-- <link rel="stylesheet" href="{{ site.baseurl }}public/css/blackdoc.css"> -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/gpgc_styles.css">
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond"> -->
@@ -31,14 +30,7 @@
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
   <!-- <script type="text/javascript" src="{{ site.baseurl }}public/js/stickyfill.js"></script> -->
   {% include analytics.html %}
-  <script type="text/javascript">
-   window.onload = function () {
-       //Sticky.autoInit()
-       //Stickyfill.add(stickyElements[0]);
-       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
-        *     console.log(stickyElements[i]);
-        *     Stickyfill.add(stickyElements[i]);
-        * }*/
-   }
-  </script>
+  {% if page.comments %}
+      {% include disqus.html  %}
+  {% endif %}
 </head>

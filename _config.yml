@@ -3,6 +3,8 @@ array: []
 markdown:         redcarpet
 highlighter:      pygments
 gems:             [jekyll-paginate, jekyll-gist]
+disqus_short_name: my-infinite-lack-of-knowledge
+comments: true
 
 # Permalinks
 permalink:        pretty

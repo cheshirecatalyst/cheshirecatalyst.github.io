@@ -18,7 +18,7 @@
         </span>
     </section>
     {% if include.post.content %}
-    {{ include.post.content | remove_first: '&lt;!&#x2013;more&#x2013;&gt;' }}
+    <p>{{ include.post.content | strip_html | truncatewords: 140 | remove_first: '&lt;!&#x2013;more&#x2013;&gt;' }}</p>
     {% else %}
     {{ content | remove_first: '&lt;!&#x2013;more&#x2013;&gt;' }}
     {% endif %}
@@ -29,4 +29,5 @@
         </li>
         {% endfor %}
     </ul>
+    <section id="disqus_thread"></div>
 </article>

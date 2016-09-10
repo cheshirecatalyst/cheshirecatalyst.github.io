@@ -22,5 +22,5 @@ The code below dynamically generates a sidebar nav of pages with
 <span class="lineno">{{ line_num }}</span>         <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ site.baseurl }}{{ node.url  | remove_first: '/' }}">{{ node.title }}</a>{% endif %}{% endfor %}{% endcapture %}
 
 <nav><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> nav
-<span class="lineno">2</span>       '<span class="paren-2">(</span><a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-{{ nav_links }}</code></pre></nav>
+<span class="lineno">2</span>       '<span class="paren-2">(</span><a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">home</a>
+{{ nav_links | downcase }}</code></pre></nav>

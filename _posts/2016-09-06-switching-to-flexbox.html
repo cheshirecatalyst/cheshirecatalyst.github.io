@@ -1,0 +1,94 @@
+---
+title: "Switching To Flexbox"
+date: 2016-09-06 16:42:00
+layout: post
+tags: css html5 journal
+series: "Literate Tech Journal"
+comments: true
+---
+<p>
+So when I got started with this blog, I grabbed the first thing that I saw I liked and was
+good to go, out of the box. That happened to be <a href="https://github.com/karloespiritu/BlackDoc">BlackDoc</a>. I did this mainly so I could experiment with Emacs
+and blogging from it through <a href="https://jekyllrb.com">jekyll</a>, also I generally despise any 'front-end' work. Mostly due
+to caring about browsers, caring about finding the right polyfill, old versions of IE, Css hacks
+and generally what I consider to be a never ending barrage of bullshit that regular users are
+shielded from, but developers must be constantly aware of. This to me, makes forward facing tech
+on the web irritating, arbitrarily hard and not worth it. However, since this is just a thing I'm
+doing for me and I don't care what browser where renders what in some way, I decided to give the
+whole html5 Css thing another go.
+</p>
+
+<p>
+So I started with what I sort of remembered, I need to reset or something, and then I found that
+apparently lots of people are normalizing instead. Grabbed <a href="https://github.com/JohnAlbin/normalize-scss">this</a> scss version of <a href="https://github.com/necolas/normalize.css/">Normalize.css</a>. Now
+where do I find just some good stuff, you know what I mean, a sensible base layer. Poking around and
+a wild <a href="http://getskeleton.com">skeleton</a> appeared, then I located <a href="https://github.com/WhatsNewSaes/Skeleton-Sass">this</a> scss version which had the normalize removed, what luck
+since i had already found the standalone one.
+</p>
+
+<p>
+At first I was messing around with the skeleton grid system, pretty sweet, but when I was exploring
+I kept hearing about <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">flexbox</a> is coming soon, so I looked into this flexy box thing. Turns out it had
+arrived already. With this knowledge in hand I quickly located <a href="http://flexboxgrid.com">flexbox grid</a> and disabled importing
+the grid system from skeleton. Nice nice, great start. Then I found out that chrome dropped support
+for position: sticky, messed around with java script polyfills for making this work. Then I decided
+meh who cares. With that tidbit out of the way, I moved on to colors. Even though I generally
+dislike frontend work I have always loved colors, which gave me another chance to use one of my favorite
+tools <a href="http://sipapp.io">sip</a>, very cool. So I snagged me some colors, and got to work.
+</p>
+
+<p>
+Type type type, messing around with template, soooo many divs and divs as wrappers barf. I thought
+this was <a href="http://knowyourmeme.com/memes/come-on-it-s-2015-current-year">&gt;Current Year</a> and there was supposed to be much semantic goodness. Much searching, find some
+examples. Strip down the html present in my starting template, omg all the shapes and typesetting are
+three kinds of messed up. Ok&#x2026;Ok&#x2026;Gonna bite the bullet lets strip this whole thing down, use
+reference render of decent looking one rendered old way. Ok some sections an aside a nav and various
+elements later, done. So I'm looking at it and I'm pretty unsatisfied with my navigation, and I think
+to myself yeah, code. It should look like code.
+</p>
+
+<p>
+Great idea, I get to work on it manually plotting out some spans, simulate rainbow parenthesis. But there
+is this huge gap at the bottom of my code block. What gives? Turns out that the end of the liquid for
+tag before the closing &lt;/code&gt;&lt;/pre&gt;&lt;/nav&gt; adds white space as it is interpreted literally. So I had
+to capture the output:
+</p>
+
+{% highlight liquid %}
+{% raw %}
+{% capture nav_links %}
+{% assign line_num = 2 %}
+{% assign pages_list = site.pages %}
+{% assign filtered_list = site.array %}
+{% for item in pages_list %}
+{% if item.title != null %}
+{% if item.layout == "page" %}
+{% assign filtered_list = filtered_list | push: item %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% for node in filtered_list %}
+{% assign line_num = line_num | plus: 1 %}
+{% if forloop.last == true %}
+{% endraw %}
+{% endhighlight %}
+
+<p>
+and insert it:
+</p>
+
+{% highlight html %}
+{% raw %}{{ nav_links | downcase }}</code></pre></nav>{% endraw %}
+{% endhighlight %}
+
+<p>
+Instead of keeping the logic in between the tags, as it had originally been done in BlackDoc.
+</p>
+
+<p>
+Alright, then I noticed that for some reason (still unknown to me) if you visit <a href="https://dotmilk.github.io/bug">this</a> bugged archived
+copy of the main page. You will discover the thing that prompted me to ask <a href="http://stackoverflow.com/q/39337638/2180406">this</a> question on SO. Basically
+for some reason on safari the left hand nav is thin and anti-aliased while the pagination at the bottom
+is not. I followed the advice, well sort of because I wanted both navigation places to look like the
+pagination. Now I just need to style the tags on the main article pages and should be done, unless
+I totally forgot about something. Probably did&#x2026;probably did.</p>
