@@ -32,16 +32,20 @@
  ga('create', 'UA-81686781-1', 'auto');
  ga('send', 'pageview');
 </script>
-  <script type="text/javascript">
-   window.onload = function () {
-       //Sticky.autoInit()
-       //Stickyfill.add(stickyElements[0]);
-       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
-        *     console.log(stickyElements[i]);
-        *     Stickyfill.add(stickyElements[i]);
-        * }*/
-   }
-  </script>
+<script type="text/javascript">
+ var disqus_shortname = 'my-infinite-lack-of-knowledge';
+ // var disqus_developer = 1;
+ var disqus_identifier = 'https://cheshirecatalyst.github.io/2016/08/23/prelude-to-a-rabbit-hole/';
+ var disqus_url = 'https://cheshirecatalyst.github.io/2016/08/23/prelude-to-a-rabbit-hole/';
+ var disqus_script = 'embed.js';
+ (function () {
+     var embedScript = document.createElement('script');
+     embedScript.type = 'text/javascript';
+     embedScript.async = true;
+     embedScript.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);
+ }());
+</script>
 </head>
     <body>
         <section class="row">
@@ -82,7 +86,7 @@ Emacs.
 </p>
 <p>
 Basically I had gotten tired of throwing stuff in my personal directory and had a growing
-file of thigns to work around features of prelude or adding funcitnality. One day it was too
+file of things to work around features of prelude or adding funcitnality. One day it was too
 much and I set about figuring what parts of prelude did what and why. Much was learned about
 </p>
 <ul class="org-ul">
@@ -104,6 +108,7 @@ For now though. Phew&#x2026;..
             <a class="tag_list_link" href="/tag/emacs">emacs</a>
         </li>
     </ul>
+    <section id="disqus_thread"></div>
 </article>
             </main>
         </section>

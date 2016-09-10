@@ -4,7 +4,7 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-09-09T14:34:02-04:00</updated>
+ <updated>2016-09-09T22:17:24-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
@@ -96,8 +96,7 @@ copy of the main page. You will discover the thing that prompted me to ask &lt;a
 for some reason on safari the left hand nav is thin and anti-aliased while the pagination at the bottom
 is not. I followed the advice, well sort of because I wanted both navigation places to look like the
 pagination. Now I just need to style the tags on the main article pages and should be done, unless
-I totally forgot about something. Probably did&amp;#x2026;probably did.
-&lt;/p&gt;
+I totally forgot about something. Probably did&amp;#x2026;probably did.&lt;/p&gt;
 </content>
  </entry>
  
@@ -159,15 +158,14 @@ Ok Ok time to dive into some more conversion options
 &lt;p&gt;
 Hit blend&amp;#x2026;.BAM a readable book text and images all looking pretty good. Mission
 success. Now I can finally get through chapter 5 after brushing back through chapter 4
-and finish a book I bought forever ago.
-&lt;/p&gt;
+and finish a book I bought forever ago.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>Prelude To A Rabbit Hole</title>
    <link href="https://cheshirecatalyst.github.io/2016/08/23/prelude-to-a-rabbit-hole/"/>
-   <updated>2016-08-23T13:44:05-04:00</updated>
+   <updated>2016-08-23T19:01:00-04:00</updated>
    <id>https://cheshirecatalyst.github.io/2016/08/23/prelude-to-a-rabbit-hole</id>
    <content type="html">&lt;p&gt;
 So I have spent the last two weeks or so ripping parts out of &lt;a href=&quot;https://github.com/bbatsov/prelude&quot;&gt;Prelude&lt;/a&gt; and learning about
@@ -180,7 +178,7 @@ Emacs.
 
 &lt;p&gt;
 Basically I had gotten tired of throwing stuff in my personal directory and had a growing
-file of thigns to work around features of prelude or adding funcitnality. One day it was too
+file of things to work around features of prelude or adding funcitnality. One day it was too
 much and I set about figuring what parts of prelude did what and why. Much was learned about
 &lt;/p&gt;
 
@@ -203,54 +201,13 @@ For now though. Phew&amp;#x2026;..
  </entry>
  
  <entry>
-   <title>Comments and Questions</title>
-   <link href="https://cheshirecatalyst.github.io/2016/08/04/comments-and-questions/"/>
-   <updated>2016-08-04T16:52:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/08/04/comments-and-questions</id>
-   <content type="html">&lt;p&gt;
-This is mostly just a test running a diagnostic thing to see what is going on.
-Which turned out to be maybe a heisenbug, because as soon as i turned on the
-diagnostics it suddenly works. Yay&amp;#x2026;ish.
-&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Some caveats may apply Pt. 1</title>
-   <link href="https://cheshirecatalyst.github.io/2016/08/03/some-caveats-may-apply-pt-1/"/>
-   <updated>2016-08-03T19:01:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/08/03/some-caveats-may-apply-pt-1</id>
-   <content type="html">&lt;p&gt;
-So, turns out since I&#39;m strange and just push my _live to master and the rest
-of it to the &#39;sources&#39; branch, none of the hooks get called until I push sources
-which is fine I just hadn&#39;t thought about it and was like where are my comments.
-It is mostly my own fault for not thinking and also being difficult. I mean,
-had I really thought about it of course the git hook is looking through the
-_posts directory not 2016/xx/xx/xxxxxx. So with this issue resolved hopefully
-this push will do what I think it should and I wont have to call bootstrap and
-push with the script to make it work.
-&lt;/p&gt;
-
-&lt;p&gt;
-Update: Wellllllll still no joy on the hooks. they have been +x and all that jazz
-so I have left a comment on an old &lt;a href=&quot;https://github.com/wireddown/ghpages-ghcomments/issues/6&quot;&gt;issue&lt;/a&gt; hopefully something good will come from it
-luckily I can still manually create them with two commands when I publish a post.
-&lt;/p&gt;
-
-&lt;p&gt;
-In the mean time I will dig through this script and see what gives.
-&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>TTIJD</title>
+   <title>TTIJD                l</title>
    <link href="https://cheshirecatalyst.github.io/2016/08/03/ttijd/"/>
    <updated>2016-08-03T16:31:00-04:00</updated>
    <id>https://cheshirecatalyst.github.io/2016/08/03/ttijd</id>
    <content type="html">&lt;p&gt;
-That thing I just did, has started to be extremely helpful as far as &lt;a href=&quot;http://orgmode.org/&quot;&gt;org-mode&lt;/a&gt;
-and my total &lt;a href=&quot;https://emacswiki.org/&quot;&gt;Emacs&lt;/a&gt; experience. Well&amp;#x2026;what is &quot;That thing I just did&quot;? Funny
+That thing I just did, has started to be extremely helpful as far as &lt;a href=&quot;http://orgmode.org&quot;&gt;org-mode&lt;/a&gt;
+and my total &lt;a href=&quot;https://emacswiki.org&quot;&gt;Emacs&lt;/a&gt; experience. Well&amp;#x2026;what is &quot;That thing I just did&quot;? Funny
 you should ask me that as I just discovered a thing &#39;C-c l&#39; &lt;a href=&quot;http://orgmode.org/manual/Handling-links.html&quot;&gt;org-store-link&lt;/a&gt; as
 I was trying to just insert the Emacs link above and forgot to keep &#39;C&#39; down
 for the &#39;C-c C-l&#39;. Sure it was a diversion but I welcome temporary digressions
@@ -277,10 +234,10 @@ I discovered easy link creation while making &lt;a href=&quot;/2016/07/31/new-bl
 &lt;p&gt;
 While the above pyramid has seen more than its fair share of use and abuse, certainly
 a few of those items above will really help you and a different or overlapping set
-will help someone else. For instance I have really been digging on &lt;a href=&quot;http://exercism.io/&quot;&gt;exercism.io&lt;/a&gt;
+will help someone else. For instance I have really been digging on &lt;a href=&quot;http://exercism.io&quot;&gt;exercism.io&lt;/a&gt;
 for my contrived experiences, which completing the elixir (I had them all done,
 they have since added more) and common lisp problems in Emacs has given me direct
-purposeful experience with Emacs. Say you are all about &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; and have your actual
+purposeful experience with Emacs. Say you are all about &lt;a href=&quot;https://atom.io&quot;&gt;Atom&lt;/a&gt; and have your actual
 work, workflow all set up there, and you&#39;ve heard about this Emacs thing. Well
 you can keep your purposeful experience in atom (do your work there) and play with
 contrived experiences in your preferred or new language in Emacs while getting
@@ -292,23 +249,7 @@ Now I add a new layer in by blogging about my experience from inside one of the
 technologies I have used to edit all parts of this blog. Which if I point out things
 tips tricks chords then this .org file I&#39;m blogging from also becomes a sort of
 &lt;a href=&quot;http://uncyclopedia.wikia.com/wiki/Worst_100_Self_Help_books_of_All_Time&quot;&gt;self-help&lt;/a&gt; &lt;a href=&quot;http://www.core-vector.net/files/redcode_cheatsheet.pdf&quot;&gt;cheat-sheet&lt;/a&gt;. Which is to say getting this blog going in a single file
-has come with other unexpected benefits.
-&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>RFC</title>
-   <link href="https://cheshirecatalyst.github.io/2016/08/03/rfc/"/>
-   <updated>2016-08-03T03:59:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/08/03/rfc</id>
-   <content type="html">&lt;p&gt;
-Ok Ok ok&amp;#x2026;that is a horrible joke, however it is now apparently open season on
-comments thanks to a pretty cool &lt;a href=&quot;https://github.com/wireddown/ghpages-ghcomments&quot;&gt;hack&lt;/a&gt;, all nicely packaged with wonderful and
-concise instructions &lt;a href=&quot;http://downtothewire.io/ghpages-ghcomments/setup/&quot;&gt;here&lt;/a&gt;, and so far this seems to work. It very nicely added
-the appropriate stuff for existing posts and this post will mark the test of
-its hook functionality. Hoping it all works as advertised.
-&lt;/p&gt;
+has come with other unexpected benefits.&lt;/p&gt;
 </content>
  </entry>
  
@@ -369,45 +310,43 @@ I noticed there was a closed field added that had an actual time stamp.
 Armed with this, I modified it to check for the presence of that before the
 scheduled field and use that for the subsequent code. Though I&#39;m certain
 there must be a way to just insert a real time-stamp into the scheduled field
-instead of just a date. Will research tomorrow.
-&lt;/p&gt;
+instead of just a date. Will research tomorrow.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>Up And Running-ish</title>
    <link href="https://cheshirecatalyst.github.io/2016/07/31/up-and-running-ish/"/>
-   <updated>2016-07-31T18:56:20-04:00</updated>
+   <updated>2016-07-31T18:56:00-04:00</updated>
    <id>https://cheshirecatalyst.github.io/2016/07/31/up-and-running-ish</id>
    <content type="html">&lt;p&gt;
 And now (hopefully) I have my google analytics up and running thanks to this
-&lt;a href=&quot;http://stackoverflow.com/a/36797554&quot;&gt;answer&lt;/a&gt; which is further explained in &lt;a href=&quot;https://desiredpersona.com/google-analytics-jekyll/&quot;&gt;this&lt;/a&gt; blog post by aforementioned answerer.
-Many thanks to him, and those working on &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;. I am really starting to appreciate
+&lt;a href=&quot;http://stackoverflow.com/a/36797554&quot;&gt;answer&lt;/a&gt; which is further explained in &lt;a href=&quot;https://desiredpersona.com/google-analytics-jekyll/&quot;&gt;this&lt;/a&gt; blog post by aforementioned answer-er.
+Many thanks to him, and those working on &lt;a href=&quot;https://jekyllrb.com&quot;&gt;jekyll&lt;/a&gt;. I am really starting to appreciate
 the stack as it is extremely intuitive and well documented. While they aren&#39;t really
 in competition as they are for completely different domains, I consider jekyll to be
 another great victory in the non-rails ruby web tech area.
 &lt;/p&gt;
 
 &lt;p&gt;
-Oh, I almost forgot many thanks to &lt;a href=&quot;http://web-mode.org/&quot;&gt;web-mode&lt;/a&gt; which I just found, as i was getting
+Oh, I almost forgot many thanks to &lt;a href=&quot;http://web-mode.org&quot;&gt;web-mode&lt;/a&gt; which I just found, as i was getting
 tired of seeing all sorts of funky errors in my .html from the jekyll templating
 and such. This particular snippet after installation worked wonders:
 &lt;/p&gt;
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-cl&quot; data-lang=&quot;cl&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;add-to-list&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;&amp;#39;auto-mode-alist&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;\\.html?\\&amp;#39;&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;web-mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;p&gt;
-Also useful was this &lt;a href=&quot;http://orgmode.org/manual/Languages.html&quot;&gt;list&lt;/a&gt; of supported languages in &lt;a href=&quot;http://orgmode.org/manual/Literal-examples.html&quot;&gt;literal&lt;/a&gt; blocks with org-mode.
-&lt;/p&gt;
+Also useful was this &lt;a href=&quot;http://orgmode.org/manual/Languages.html&quot;&gt;list&lt;/a&gt; of supported languages in &lt;a href=&quot;http://orgmode.org/manual/Literal-examples.html&quot;&gt;literal&lt;/a&gt; blocks with org-mode.&lt;/p&gt;
 </content>
  </entry>
  
  <entry>
    <title>Instant Fun</title>
    <link href="https://cheshirecatalyst.github.io/2016/07/31/instant-fun/"/>
-   <updated>2016-07-31T18:55:52-04:00</updated>
+   <updated>2016-07-31T18:55:00-04:00</updated>
    <id>https://cheshirecatalyst.github.io/2016/07/31/instant-fun</id>
    <content type="html">&lt;p&gt;
 So here is a useful &lt;a href=&quot;http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200&quot;&gt;tidbit&lt;/a&gt; I came across while setting this whole thing up. I
-suppose it is somewhat old news to some, however I am new to the &lt;a href=&quot;https://pages.github.com/&quot;&gt;github pages&lt;/a&gt;
+suppose it is somewhat old news to some, however I am new to the &lt;a href=&quot;https://pages.github.com&quot;&gt;github pages&lt;/a&gt;
 game and haven&#39;t looked at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;jekyll&lt;/a&gt; since 2010-ish. That last bit is entirely my
 fault though, as I had left &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;ruby-land&lt;/a&gt; at that point and was off in &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;v8-world&lt;/a&gt;
 until recently. When I quit my job and moved back to the united states. Crazy
@@ -415,11 +354,11 @@ I know.
 &lt;/p&gt;
 
 &lt;p&gt;
-So after catching up on &lt;a href=&quot;https://serialpodcast.org/&quot;&gt;serial&lt;/a&gt;, and getting back in to drawing, I finally got
+So after catching up on &lt;a href=&quot;https://serialpodcast.org&quot;&gt;serial&lt;/a&gt;, and getting back in to drawing, I finally got
 to the point where I could look at code again. It was here as previously
 mentioned that I got heavily into emacs. Which admittedly was less for the
 sake of blogging, and more because I had finally committed to get more than
-a passing familiarity with &lt;a href=&quot;https://common-lisp.net/&quot;&gt;cl&lt;/a&gt;. Which meant spending time in emacs and &lt;a href=&quot;https://github.com/slime/slime&quot;&gt;slime&lt;/a&gt;
+a passing familiarity with &lt;a href=&quot;https://common-lisp.net&quot;&gt;cl&lt;/a&gt;. Which meant spending time in emacs and &lt;a href=&quot;https://github.com/slime/slime&quot;&gt;slime&lt;/a&gt;
 and the more time I spent in emacs the more I found out it can &lt;a href=&quot;https://www.emacswiki.org/emacs/TheKitchenSink&quot;&gt;do&lt;/a&gt;. This, I am
 almost certain, is an age-old story of emacs addiction. I wonder if there is
 a 12 step program for this?&lt;/p&gt;
@@ -428,12 +367,12 @@ a 12 step program for this?&lt;/p&gt;
  
  <entry>
    <title>New Blog</title>
-   <link href="https://cheshirecatalyst.github.io/2016/07/31/new-blog/"/>
-   <updated>2016-07-31T18:00:00-04:00</updated>
-   <id>https://cheshirecatalyst.github.io/2016/07/31/new-blog</id>
+   <link href="https://cheshirecatalyst.github.io/2016/07/30/new-blog/"/>
+   <updated>2016-07-30T00:05:00-04:00</updated>
+   <id>https://cheshirecatalyst.github.io/2016/07/30/new-blog</id>
    <content type="html">&lt;p&gt;
 Today I started on a new multi-pronged adventure. Ok, well most of those
-prongs all revolve around &lt;a href=&quot;https://emacswiki.org/&quot;&gt;Emacs&lt;/a&gt;. Which is a cool looking and fun program in general.
+prongs all revolve around &lt;a href=&quot;https://emacswiki.org&quot;&gt;Emacs&lt;/a&gt;. Which is a cool looking and fun program in general.
 So this adventure began when I decided to graduate from using it for editing
 commit messages, and try to use it exclusively. Thus this blog is born.
 &lt;/p&gt;
@@ -449,7 +388,7 @@ solutions. This struggle in and of itself, helps the learner on many levels.
 
 &lt;p&gt;
 Did this work? I hope it did. And it did. Which is nice since I&#39;ve never even touched
-&lt;a href=&quot;http://orgmode.org/&quot;&gt;org-mode&lt;/a&gt; before. In fact while writing that line I got sick of manually typing in
+&lt;a href=&quot;http://orgmode.org&quot;&gt;org-mode&lt;/a&gt; before. In fact while writing that line I got sick of manually typing in
 square brackets and looked up the chord for &#39;org-insert-link&#39; &#39;C-c C-l&#39;, which
 took many keystrokes to hunt down, however over time the initial investment of
 a few extra keystrokes is certainly worth never having to type those square brackets

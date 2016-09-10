@@ -32,16 +32,6 @@
  ga('create', 'UA-81686781-1', 'auto');
  ga('send', 'pageview');
 </script>
-  <script type="text/javascript">
-   window.onload = function () {
-       //Sticky.autoInit()
-       //Stickyfill.add(stickyElements[0]);
-       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
-        *     console.log(stickyElements[i]);
-        *     Stickyfill.add(stickyElements[i]);
-        * }*/
-   }
-  </script>
 </head>
     <body>
         <section class="row">
@@ -64,57 +54,6 @@
 <article class="post">
     <section class="meta">
         <h4 class="post-title">
-            <a href="/2016/08/03/ttijd/">
-                TTIJD
-            </a>
-        </h4>
-        <span class="post-date">
-            03 Aug 2016
-        </span>
-    </section>
-    <p>That thing I just did, has started to be extremely helpful as far as org-mode and my total Emacs experience. Well&#x2026;what is "That thing I just did"? Funny you should ask me that as I just discovered a thing 'C-c l' org-store-link as I was trying to just insert the Emacs link above and forgot to keep 'C' down for the 'C-c C-l'. Sure it was a diversion but I welcome temporary digressions to a certain depth while engaged in my day to day activities. It's basically like the problem with Wikipedia. Except for in Emacs, it's minutes of fascinated 'C-h k' which tells me wtf this key combo does or 'C-h v' which tells me wtf this variable is and how it relates to the largely unknown mesh of abstractions that let me type stuff like this. However I...</p>
-    <ul class="tag_list">
-    </ul>
-</article>
-<article class="post">
-    <section class="meta">
-        <h4 class="post-title">
-            <a href="/2016/08/03/rfc/">
-                RFC
-            </a>
-        </h4>
-        <span class="post-date">
-            03 Aug 2016
-        </span>
-    </section>
-    <p>
-Ok Ok ok&#x2026;that is a horrible joke, however it is now apparently open season on
-comments thanks to a pretty cool hack, all nicely packaged with wonderful and
-concise instructions here, and so far this seems to work. It very nicely added
-the appropriate stuff for existing posts and this post will mark the test of
-its hook functionality. Hoping it all works as advertised.
-</p>
-    <ul class="tag_list">
-    </ul>
-</article>
-<article class="post">
-    <section class="meta">
-        <h4 class="post-title">
-            <a href="/2016/08/01/after-the-wtf/">
-                After the WTF
-            </a>
-        </h4>
-        <span class="post-date">
-            01 Aug 2016
-        </span>
-    </section>
-    <p>Time for a little more meat and potatoes with this milk. What really inspired me to start this blog was a post I came across. I must admit the idea of keeping my blog in a single file sounded extremely sexy, so armed with this article I googled my way to this point. All without ever having used org-mode at all or realizing org-mode is like some sort of strange markdown it seems like. And now I am hooked. So the wtf: Apparently I had messed up some property or a tag in combination with something funky in jekyll. Which somehow was getting blog posts for today rendered tomorrow. No idea, I opened a talk thing over with the jekyll folks, ran through a bunch of rm -rf, changed stuff, ended up removing all the properties added by the endless/export-to-blog...</p>
-    <ul class="tag_list">
-    </ul>
-</article>
-<article class="post">
-    <section class="meta">
-        <h4 class="post-title">
             <a href="/2016/07/31/up-and-running-ish/">
                 Up And Running-ish
             </a>
@@ -125,7 +64,7 @@ its hook functionality. Hoping it all works as advertised.
     </section>
     <p>
 And now (hopefully) I have my google analytics up and running thanks to this
-answer which is further explained in this blog post by aforementioned answerer.
+answer which is further explained in this blog post by aforementioned answer-er.
 Many thanks to him, and those working on jekyll. I am really starting to appreciate
 the stack as it is extremely intuitive and well documented. While they aren't really
 in competition as they are for completely different domains, I consider jekyll to be
@@ -138,6 +77,7 @@ Also useful was this list of supported languages in literal blocks with org-mode
 </p>
     <ul class="tag_list">
     </ul>
+    <section id="disqus_thread"></div>
 </article>
 <article class="post">
     <section class="meta">
@@ -153,8 +93,25 @@ Also useful was this list of supported languages in literal blocks with org-mode
     <p>So here is a useful tidbit I came across while setting this whole thing up. I suppose it is somewhat old news to some, however I am new to the github pages game and haven't looked at jekyll since 2010-ish. That last bit is entirely my fault though, as I had left ruby-land at that point and was off in v8-world until recently. When I quit my job and moved back to the united states. Crazy I know. So after catching up on serial, and getting back in to drawing, I finally got to the point where I could look at code again. It was here as previously mentioned that I got heavily into emacs. Which admittedly was less for the sake of blogging, and more because I had finally committed to get more than a passing familiarity with cl....</p>
     <ul class="tag_list">
     </ul>
+    <section id="disqus_thread"></div>
 </article>
-<section class="pagination"><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> pagination '<span class="paren-2">(</span><a class="pagination-item older" href="/page3">older</a> . <a class="pagination-item newer" href="/">newer</a><span class="paren-2">)</span><span class="paren-1">)</span></code></pre></section>
+<article class="post">
+    <section class="meta">
+        <h4 class="post-title">
+            <a href="/2016/07/30/new-blog/">
+                New Blog
+            </a>
+        </h4>
+        <span class="post-date">
+            30 Jul 2016
+        </span>
+    </section>
+    <p>Today I started on a new multi-pronged adventure. Ok, well most of those prongs all revolve around Emacs. Which is a cool looking and fun program in general. So this adventure began when I decided to graduate from using it for editing commit messages, and try to use it exclusively. Thus this blog is born. It's a pretty hefty task getting all the things how you want them, learning all the chords sorting through similar yet frustratingly different problems and solutions. This struggle in and of itself, helps the learner on many levels. (+ 1 2) Did this work? I hope it did. And it did. Which is nice since I've never even touched org-mode before. In fact while writing that line I got sick of manually typing in square brackets and looked up the chord for 'org-insert-link' 'C-c C-l',...</p>
+    <ul class="tag_list">
+    </ul>
+    <section id="disqus_thread"></div>
+</article>
+<section class="pagination"><pre><code language="language-lisp"><span class="lineno">1</span> <span class="paren-1">(</span><span class="kw">setf</span> pagination '<span class="paren-2">(</span><span class="pagination-item older">nil</span> . <a class="pagination-item newer" href="/">newer</a><span class="paren-2">)</span><span class="paren-1">)</span></code></pre></section>
             </main>
         </section>
     </body>

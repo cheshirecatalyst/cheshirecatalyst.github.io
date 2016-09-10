@@ -32,16 +32,20 @@
  ga('create', 'UA-81686781-1', 'auto');
  ga('send', 'pageview');
 </script>
-  <script type="text/javascript">
-   window.onload = function () {
-       //Sticky.autoInit()
-       //Stickyfill.add(stickyElements[0]);
-       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
-        *     console.log(stickyElements[i]);
-        *     Stickyfill.add(stickyElements[i]);
-        * }*/
-   }
-  </script>
+<script type="text/javascript">
+ var disqus_shortname = 'my-infinite-lack-of-knowledge';
+ // var disqus_developer = 1;
+ var disqus_identifier = 'https://cheshirecatalyst.github.io/2016/07/31/up-and-running-ish/';
+ var disqus_url = 'https://cheshirecatalyst.github.io/2016/07/31/up-and-running-ish/';
+ var disqus_script = 'embed.js';
+ (function () {
+     var embedScript = document.createElement('script');
+     embedScript.type = 'text/javascript';
+     embedScript.async = true;
+     embedScript.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);
+ }());
+</script>
 </head>
     <body>
         <section class="row">
@@ -74,21 +78,20 @@
     </section>
     <p>
 And now (hopefully) I have my google analytics up and running thanks to this
-<a href="http://stackoverflow.com/a/36797554">answer</a> which is further explained in <a href="https://desiredpersona.com/google-analytics-jekyll/">this</a> blog post by aforementioned answerer.
-Many thanks to him, and those working on <a href="https://jekyllrb.com/">jekyll</a>. I am really starting to appreciate
+<a href="http://stackoverflow.com/a/36797554">answer</a> which is further explained in <a href="https://desiredpersona.com/google-analytics-jekyll/">this</a> blog post by aforementioned answer-er.
+Many thanks to him, and those working on <a href="https://jekyllrb.com">jekyll</a>. I am really starting to appreciate
 the stack as it is extremely intuitive and well documented. While they aren't really
 in competition as they are for completely different domains, I consider jekyll to be
 another great victory in the non-rails ruby web tech area.
 </p>
 <p>
-Oh, I almost forgot many thanks to <a href="http://web-mode.org/">web-mode</a> which I just found, as i was getting
+Oh, I almost forgot many thanks to <a href="http://web-mode.org">web-mode</a> which I just found, as i was getting
 tired of seeing all sorts of funky errors in my .html from the jekyll templating
 and such. This particular snippet after installation worked wonders:
 </p>
 <figure class="highlight"><pre><code class="language-cl" data-lang="cl"><span class="p">(</span><span class="nv">add-to-list</span> <span class="ss">&#39;auto-mode-alist</span> <span class="o">&#39;</span><span class="p">(</span><span class="s">&quot;\\.html?\\&#39;&quot;</span> <span class="o">.</span> <span class="nv">web-mode</span><span class="p">))</span></code></pre></figure>
 <p>
-Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a> of supported languages in <a href="http://orgmode.org/manual/Literal-examples.html">literal</a> blocks with org-mode.
-</p>
+Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a> of supported languages in <a href="http://orgmode.org/manual/Literal-examples.html">literal</a> blocks with org-mode.</p>
     <ul class="tag_list">
         <li class="inline tag_list">
             <a class="tag_list_link" href="/tag/orgmode">orgmode</a>
@@ -106,6 +109,7 @@ Also useful was this <a href="http://orgmode.org/manual/Languages.html">list</a>
             <a class="tag_list_link" href="/tag/emacs">emacs</a>
         </li>
     </ul>
+    <section id="disqus_thread"></div>
 </article>
             </main>
         </section>

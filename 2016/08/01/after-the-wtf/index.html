@@ -32,16 +32,20 @@
  ga('create', 'UA-81686781-1', 'auto');
  ga('send', 'pageview');
 </script>
-  <script type="text/javascript">
-   window.onload = function () {
-       //Sticky.autoInit()
-       //Stickyfill.add(stickyElements[0]);
-       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
-        *     console.log(stickyElements[i]);
-        *     Stickyfill.add(stickyElements[i]);
-        * }*/
-   }
-  </script>
+<script type="text/javascript">
+ var disqus_shortname = 'my-infinite-lack-of-knowledge';
+ // var disqus_developer = 1;
+ var disqus_identifier = 'https://cheshirecatalyst.github.io/2016/08/01/after-the-wtf/';
+ var disqus_url = 'https://cheshirecatalyst.github.io/2016/08/01/after-the-wtf/';
+ var disqus_script = 'embed.js';
+ (function () {
+     var embedScript = document.createElement('script');
+     embedScript.type = 'text/javascript';
+     embedScript.async = true;
+     embedScript.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);
+ }());
+</script>
 </head>
     <body>
         <section class="row">
@@ -118,8 +122,7 @@ I noticed there was a closed field added that had an actual time stamp.
 Armed with this, I modified it to check for the presence of that before the
 scheduled field and use that for the subsequent code. Though I'm certain
 there must be a way to just insert a real time-stamp into the scheduled field
-instead of just a date. Will research tomorrow.
-</p>
+instead of just a date. Will research tomorrow.</p>
     <ul class="tag_list">
         <li class="inline tag_list">
             <a class="tag_list_link" href="/tag/orgmode">orgmode</a>
@@ -134,6 +137,7 @@ instead of just a date. Will research tomorrow.
             <a class="tag_list_link" href="/tag/emacs">emacs</a>
         </li>
     </ul>
+    <section id="disqus_thread"></div>
 </article>
             </main>
         </section>

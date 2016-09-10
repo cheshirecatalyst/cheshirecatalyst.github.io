@@ -8,7 +8,7 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>
-      Comments and Questions &middot; .milk
+      New Blog &middot; .milk
   </title>
   <!-- CSS -->
   <link rel="stylesheet" href="/public/css/application.css?v=1.0">
@@ -32,16 +32,20 @@
  ga('create', 'UA-81686781-1', 'auto');
  ga('send', 'pageview');
 </script>
-  <script type="text/javascript">
-   window.onload = function () {
-       //Sticky.autoInit()
-       //Stickyfill.add(stickyElements[0]);
-       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
-        *     console.log(stickyElements[i]);
-        *     Stickyfill.add(stickyElements[i]);
-        * }*/
-   }
-  </script>
+<script type="text/javascript">
+ var disqus_shortname = 'my-infinite-lack-of-knowledge';
+ // var disqus_developer = 1;
+ var disqus_identifier = 'https://cheshirecatalyst.github.io/2016/07/30/new-blog/';
+ var disqus_url = 'https://cheshirecatalyst.github.io/2016/07/30/new-blog/';
+ var disqus_script = 'embed.js';
+ (function () {
+     var embedScript = document.createElement('script');
+     embedScript.type = 'text/javascript';
+     embedScript.async = true;
+     embedScript.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);
+ }());
+</script>
 </head>
     <body>
         <section class="row">
@@ -65,26 +69,52 @@
     <section class="meta">
         <h4 class="post-title">
             <a href="/">
-                Comments and Questions
+                New Blog
             </a>
         </h4>
         <span class="post-date">
-            04 Aug 2016
+            30 Jul 2016
         </span>
     </section>
     <p>
-This is mostly just a test running a diagnostic thing to see what is going on.
-Which turned out to be maybe a heisenbug, because as soon as i turned on the
-diagnostics it suddenly works. Yay&#x2026;ish.
+Today I started on a new multi-pronged adventure. Ok, well most of those
+prongs all revolve around <a href="https://emacswiki.org">Emacs</a>. Which is a cool looking and fun program in general.
+So this adventure began when I decided to graduate from using it for editing
+commit messages, and try to use it exclusively. Thus this blog is born.
 </p>
+<p>
+It's a pretty hefty task getting all the things how you want them, learning all
+the <a href="https://www.emacswiki.org/emacs/KeyChord">chords</a> sorting through similar yet frustratingly different problems and
+solutions. This struggle in and of itself, helps the learner on many levels.
+</p>
+<figure class="highlight"><pre><code class="language-lisp" data-lang="lisp"><span class="p">(</span><span class="nb">+</span> <span class="mi">1</span> <span class="mi">2</span><span class="p">)</span></code></pre></figure>
+<p>
+Did this work? I hope it did. And it did. Which is nice since I've never even touched
+<a href="http://orgmode.org">org-mode</a> before. In fact while writing that line I got sick of manually typing in
+square brackets and looked up the chord for 'org-insert-link' 'C-c C-l', which
+took many keystrokes to hunt down, however over time the initial investment of
+a few extra keystrokes is certainly worth never having to type those square brackets
+again unless I just R E A L L Y wanted to. It seems I have digressed, I was excited
+because the <a href="http://orgmode.org/manual/Easy-templates.html#Easy-templates">easy</a> feature I read about to make a code block and see if it
+was indeed exported as html worked. That is both the feature and the translation to
+a code block in the output.
+</p>
+<p>
+I will cover this process more in depth in the future, but for now I am just stoked
+this is all working, and glad I put the initial effort into Emacs to reach the
+critical mass point where it all (at least to me) seems to start coming together.</p>
     <ul class="tag_list">
         <li class="inline tag_list">
-            <a class="tag_list_link" href="/tag/gotcha">gotcha</a>
+            <a class="tag_list_link" href="/tag/fun">fun</a>
         </li>
         <li class="inline tag_list">
-            <a class="tag_list_link" href="/tag/journal">journal</a>
+            <a class="tag_list_link" href="/tag/orgmode">orgmode</a>
+        </li>
+        <li class="inline tag_list">
+            <a class="tag_list_link" href="/tag/emacs">emacs</a>
         </li>
     </ul>
+    <section id="disqus_thread"></div>
 </article>
             </main>
         </section>

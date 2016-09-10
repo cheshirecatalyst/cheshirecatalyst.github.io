@@ -32,16 +32,20 @@
  ga('create', 'UA-81686781-1', 'auto');
  ga('send', 'pageview');
 </script>
-  <script type="text/javascript">
-   window.onload = function () {
-       //Sticky.autoInit()
-       //Stickyfill.add(stickyElements[0]);
-       /* for (var i = stickyElements.length - 1; i >= 0; i--) {
-        *     console.log(stickyElements[i]);
-        *     Stickyfill.add(stickyElements[i]);
-        * }*/
-   }
-  </script>
+<script type="text/javascript">
+ var disqus_shortname = 'my-infinite-lack-of-knowledge';
+ // var disqus_developer = 1;
+ var disqus_identifier = 'https://cheshirecatalyst.github.io/2016/07/31/instant-fun/';
+ var disqus_url = 'https://cheshirecatalyst.github.io/2016/07/31/instant-fun/';
+ var disqus_script = 'embed.js';
+ (function () {
+     var embedScript = document.createElement('script');
+     embedScript.type = 'text/javascript';
+     embedScript.async = true;
+     embedScript.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(embedScript);
+ }());
+</script>
 </head>
     <body>
         <section class="row">
@@ -74,18 +78,18 @@
     </section>
     <p>
 So here is a useful <a href="http://stackoverflow.com/questions/28249255/how-do-i-configure-github-to-use-non-supported-jekyll-site-plugins/28252200#28252200">tidbit</a> I came across while setting this whole thing up. I
-suppose it is somewhat old news to some, however I am new to the <a href="https://pages.github.com/">github pages</a>
+suppose it is somewhat old news to some, however I am new to the <a href="https://pages.github.com">github pages</a>
 game and haven't looked at <a href="https://github.com/jekyll/jekyll">jekyll</a> since 2010-ish. That last bit is entirely my
 fault though, as I had left <a href="https://www.ruby-lang.org/en/">ruby-land</a> at that point and was off in <a href="https://nodejs.org/en/">v8-world</a>
 until recently. When I quit my job and moved back to the united states. Crazy
 I know.
 </p>
 <p>
-So after catching up on <a href="https://serialpodcast.org/">serial</a>, and getting back in to drawing, I finally got
+So after catching up on <a href="https://serialpodcast.org">serial</a>, and getting back in to drawing, I finally got
 to the point where I could look at code again. It was here as previously
 mentioned that I got heavily into emacs. Which admittedly was less for the
 sake of blogging, and more because I had finally committed to get more than
-a passing familiarity with <a href="https://common-lisp.net/">cl</a>. Which meant spending time in emacs and <a href="https://github.com/slime/slime">slime</a>
+a passing familiarity with <a href="https://common-lisp.net">cl</a>. Which meant spending time in emacs and <a href="https://github.com/slime/slime">slime</a>
 and the more time I spent in emacs the more I found out it can <a href="https://www.emacswiki.org/emacs/TheKitchenSink">do</a>. This, I am
 almost certain, is an age-old story of emacs addiction. I wonder if there is
 a 12 step program for this?</p>
@@ -109,6 +113,7 @@ a 12 step program for this?</p>
             <a class="tag_list_link" href="/tag/emacs">emacs</a>
         </li>
     </ul>
+    <section id="disqus_thread"></div>
 </article>
             </main>
         </section>
