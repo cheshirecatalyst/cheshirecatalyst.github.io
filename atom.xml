@@ -4,7 +4,7 @@
  <title>.milk</title>
  <link href="https://cheshirecatalyst.github.io/atom.xml" rel="self"/>
  <link href="https://cheshirecatalyst.github.io/"/>
- <updated>2016-09-10T21:41:59-04:00</updated>
+ <updated>2016-09-11T18:16:22-04:00</updated>
  <id>https://cheshirecatalyst.github.io</id>
  <author>
    <name>Seth Price</name>
@@ -201,13 +201,13 @@ For now though. Phew&amp;#x2026;..
  </entry>
  
  <entry>
-   <title>TTIJD                l</title>
+   <title>TTIJD</title>
    <link href="https://cheshirecatalyst.github.io/2016/08/03/ttijd/"/>
    <updated>2016-08-03T16:31:00-04:00</updated>
    <id>https://cheshirecatalyst.github.io/2016/08/03/ttijd</id>
    <content type="html">&lt;p&gt;
-That thing I just did, has started to be extremely helpful as far as &lt;a href=&quot;http://orgmode.org&quot;&gt;org-mode&lt;/a&gt;
-and my total &lt;a href=&quot;https://emacswiki.org&quot;&gt;Emacs&lt;/a&gt; experience. Well&amp;#x2026;what is &quot;That thing I just did&quot;? Funny
+That thing I just did, has started to be extremely helpful as far as &lt;a href=&quot;http://orgmode.org/&quot;&gt;org-mode&lt;/a&gt;
+and my total &lt;a href=&quot;https://emacswiki.org/&quot;&gt;Emacs&lt;/a&gt; experience. Well&amp;#x2026;what is &quot;That thing I just did&quot;? Funny
 you should ask me that as I just discovered a thing &#39;C-c l&#39; &lt;a href=&quot;http://orgmode.org/manual/Handling-links.html&quot;&gt;org-store-link&lt;/a&gt; as
 I was trying to just insert the Emacs link above and forgot to keep &#39;C&#39; down
 for the &#39;C-c C-l&#39;. Sure it was a diversion but I welcome temporary digressions
@@ -234,10 +234,10 @@ I discovered easy link creation while making &lt;a href=&quot;/2016/07/31/new-bl
 &lt;p&gt;
 While the above pyramid has seen more than its fair share of use and abuse, certainly
 a few of those items above will really help you and a different or overlapping set
-will help someone else. For instance I have really been digging on &lt;a href=&quot;http://exercism.io&quot;&gt;exercism.io&lt;/a&gt;
+will help someone else. For instance I have really been digging on &lt;a href=&quot;http://exercism.io/&quot;&gt;exercism.io&lt;/a&gt;
 for my contrived experiences, which completing the elixir (I had them all done,
 they have since added more) and common lisp problems in Emacs has given me direct
-purposeful experience with Emacs. Say you are all about &lt;a href=&quot;https://atom.io&quot;&gt;Atom&lt;/a&gt; and have your actual
+purposeful experience with Emacs. Say you are all about &lt;a href=&quot;https://atom.io/&quot;&gt;Atom&lt;/a&gt; and have your actual
 work, workflow all set up there, and you&#39;ve heard about this Emacs thing. Well
 you can keep your purposeful experience in atom (do your work there) and play with
 contrived experiences in your preferred or new language in Emacs while getting
